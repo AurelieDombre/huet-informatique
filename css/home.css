@@ -1,0 +1,52 @@
+html{
+
+}
+
+.container {
+    
+}
+
+
+
+
+nav{
+    display:block; 
+    z-index:1111; 
+    position:relative;
+}
+.nav-bg {
+    background:url(../images/nav-bg.jpg) 0 0 repeat;
+}
+
+ul.menu {
+    margin:0px 0px 0px 102px; 
+    display:inline-block;
+}
+ul.menu li {
+    float:left; 
+    display:block; 
+    width:150px; 
+    text-align:center; 
+    text-transform:uppercase;
+}
+
+ul.menu li a {
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:13px; 
+    line-height:17px; 
+    color:#86a5a3; 
+    display:block; 
+    border-left:#c2dcdb 1px solid; 
+    padding:16px 0 21px 0; 
+}
+
+ul.menu li:first-child a {
+    border-left:transparent 1px solid;
+}
+
+ul.menu li:hover, ul.menu li.current {
+    background:#839e9c;
+}
+ul.menu li a:hover , ul.menu li.current a {
+    color:#fff;
+}

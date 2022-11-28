@@ -110,7 +110,7 @@ section h1 {
 }
 
 .parallax-interv{
-    background-color:#d2d9d8;
+    /* background-color:#d2d9d8; */
     position: relative;
     width: 100%;
     height: 100vh;
@@ -132,8 +132,47 @@ section h1 {
     padding: 5%;
 }
 
+.block_p, h3, .block a{
+    color: white;
+    text-align: center;
+}
 .block{
-    height: 300px;
+    height: 200px;
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
     margin-bottom: 20px;
+    display: flex;
+}
+
+.block_img{
+    padding: 3%;
+}
+.block_text{
+    width: 70%;
+    padding: 3%;
+}
+
+
+
+
+.link {
+    color:#85a09d;
+    text-decoration:underline; 
+}
+
+.link:hover {
+    text-decoration:none;
+}
+
+.link-1 {
+    color:#85a09d; 
+    text-transform:uppercase; 
+    text-decoration:underline; 
+    font-size:11px; 
+    line-height:18px; 
+    font-weight:bold; 
+    display:inline-block; 
+}
+
+.link-1:hover {
+    text-decoration:none;
 }

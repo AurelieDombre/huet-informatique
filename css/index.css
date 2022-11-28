@@ -1,0 +1,29 @@
+
+html{
+
+}
+
+body {
+    background-color: #839e9c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-index{
+    padding: 2%;
+    
+}
+
+
+font{
+    padding-bottom: 2%;
+}
+
+
+@media screen and (max-width: 998px) {
+    img{
+        width: 100%;
+    }
+}

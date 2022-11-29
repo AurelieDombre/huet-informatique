@@ -1,4 +1,9 @@
-html {}
+html {
+    --text-color: #839e9c;
+    --bg-color-section-title:#839e9c;
+    --bg-color-section-about:#d2d9d8;
+
+}
 
 body {
     font: 12px/18px Arial, Helvetica, sans-serif;
@@ -63,7 +68,7 @@ ul.menu li.current a {
 
 
 /* ================================================================*/
-/* ==================    PARALLAX TITRE  ===========================*/
+/* ======================    SECTIONS  ===========================*/
 /* ================================================================*/
 
 
@@ -86,15 +91,16 @@ section h1 {
 }
 
 .parallax-about{
-    position: relative;
     width: 100%;
     height: 30vh;
-    overflow: hidden;
-    display: flex;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex; 
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color:#d2d9d8;
+    background-image: url(images/header.jpg);
 }
 .parallax-product{
     position: relative;
@@ -110,16 +116,41 @@ section h1 {
 }
 
 .parallax-interv{
-    /* background-color:#d2d9d8; */
+    background-color:#d2d9d8;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* margin-bottom: 20px; */
 }
+
+.parallax-links{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
+}
+
+.parallax-links .block{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.parallax-links h2{
+    text-align: center;
+    color: white;
+}
+
+
 .product_section{
     color: #839e9c;
     font-size: 20px;
@@ -127,9 +158,38 @@ section h1 {
 }
 
 
+/* ================================================================*/
+/* =======================  ABOUT  =============================*/
+/* ================================================================*/
+
+.about{
+    color: #839e9c;
+    position: relative;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+/* ================================================================*/
+/* =======================  BLOCKS  =============================*/
+/* ================================================================*/
+
+
 .interv_title{
     text-align: center;
     padding: 5%;
+
+}
+
+.interv_title h2{
+    color: #744b2c;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 3%;
+}
+.parallax-interv h3{
+    color: #744b2c;
 }
 
 .block_p, h3, .block a{
@@ -151,8 +211,15 @@ section h1 {
     padding: 3%;
 }
 
+.block_links{
+    width: calc(100/3);
+}
 
 
+
+/* ================================================================*/
+/* ============================   LINKS ===========================*/
+/* ================================================================*/
 
 .link {
     color:#85a09d;

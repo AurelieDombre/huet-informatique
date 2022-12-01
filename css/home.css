@@ -114,16 +114,30 @@ nav img{
     background-image: url(../images/carte-mere.jpg);
 }
 .parallax-product{
-    position: relative;
     width: 100%;
-    height: 30vh;
-    overflow: hidden;
-    display: flex;
+    height: 40vh;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex; 
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color:white;
     
+}
+
+.parallax-space{
+    width: 100%;
+    height: 10vh;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/carte-mere.jpg);
 }
 
 .parallax-interv{
@@ -188,6 +202,23 @@ nav img{
     font-size: 45px;
     /* text-shadow: 2px 2px #b4b4b4fb;; */
     
+}
+
+
+/* ================================================================*/
+/* =======================  PRODUCTS =============================*/
+/* ================================================================*/
+
+.product_section{
+    padding: 3%;
+}
+
+.product_section h2{
+    color: #744b2c;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* ================================================================*/
@@ -274,4 +305,33 @@ nav img{
 
 .link-1:hover {
     text-decoration:none;
+}
+
+
+/* ================================================================*/
+/* ============================  THANKS ===========================*/
+/* ================================================================*/
+
+.parallax-thanks {
+    width: 100%;
+    height: 30vh;
+    padding: 2%;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/carte-mere.jpg); 
+} 
+
+
+.thanks{
+    color:white;
+    position: relative;
+    width: 65%;
+    padding: 2%;
+    text-align: center;
+    background-color:  #744b2c9a;
 }

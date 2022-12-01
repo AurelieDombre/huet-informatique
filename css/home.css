@@ -18,23 +18,26 @@ body {
 /* ==================    NAVIGATION  =============================*/
 /* ================================================================*/
 
-nav {
+/* nav {
     display: block;
     z-index: 1111;
-    position: sticky;
-}
+} */
 
 .nav-bg {
     background: url(../images/nav-bg.jpg) 0 0 repeat;
+    
+}
+nav img{
+    width: 60%;
+    
 }
 
-ul.menu {
+.menu {
     margin: 0px 0px 0px 330px;
     display: inline-block;
-
 }
 
-ul.menu li {
+.menu a {
     float: left;
     display: block;
     width: 150px;
@@ -42,7 +45,7 @@ ul.menu li {
     text-transform: uppercase;
 }
 
-ul.menu li a {
+.menu a {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 17px;
@@ -51,18 +54,24 @@ ul.menu li a {
     border-left: #c2dcdb 1px solid;
     padding: 16px 0 21px 0;
 }
-
-ul.menu li:first-child a {
+.menu a :first-child a {
     border-left: transparent 1px solid;
 }
 
-ul.menu li:hover,
-ul.menu li.current {
+#active{
     background: #839e9c;
+    color: #fff;
 }
 
-ul.menu li a:hover,
-ul.menu li.current a {
+
+.menu a:hover,
+.menu a .current {
+    background: #839e9c;
+
+}
+
+.menu a:hover,
+.menu li.current a {
     color: #fff;
 }
 
@@ -72,25 +81,12 @@ ul.menu li.current a {
 /* ================================================================*/
 
 
-section h1 {
+/* section h1 {
     position: relative;
+    padding: 2%;
 }
 
 .parallax-title {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #839e9c;
-    /* background-image: url(../images/network.jpg);
-    opacity: 30%; */
-}
-
-.parallax-about{
     width: 100%;
     height: 30vh;
     background-attachment:fixed;
@@ -100,7 +96,22 @@ section h1 {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/header.jpg);
+    background-color: #839e9c; 
+    background-image: url(../images/carte-mere.jpg); 
+} */
+
+.parallax-about{
+    width: 100%;
+    height: 60vh;
+    padding: 2%;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/carte-mere.jpg);
 }
 .parallax-product{
     position: relative;
@@ -163,11 +174,20 @@ section h1 {
 /* ================================================================*/
 
 .about{
-    color: #839e9c;
+    color:white;
     position: relative;
-    width: 100%;
+    width: 65%;
     padding: 2%;
     text-align: center;
+    background-color: #b4b4b4a5;
+}
+
+.about h2{
+    color: #744b2c;
+    font-weight: bold;
+    font-size: 45px;
+    /* text-shadow: 2px 2px #b4b4b4fb;; */
+    
 }
 
 /* ================================================================*/

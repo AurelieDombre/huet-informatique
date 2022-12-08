@@ -161,10 +161,10 @@ nav img {
     height: 30vh;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
+    
 }
 
 .parallax-links .block {
@@ -222,6 +222,7 @@ nav img {
     font-size: 40px;
     text-transform: uppercase;
     text-align: center;
+    
 }
 
 /* ================================================================*/
@@ -240,6 +241,7 @@ nav img {
     font-size: 40px;
     text-transform: uppercase;
     padding-top: 3%;
+
 }
 
 .parallax-interv h3 {
@@ -294,11 +296,11 @@ h3,
 }
 
 .active.fade-left {
-    animation: fade-left 1s ease-in;
+    animation: fade-left 0.5s ease-in;
 }
 
 .active.fade-right {
-    animation: fade-right 1s ease-in;
+    animation: fade-right 0.5s ease-in;
 }
 
 
@@ -330,13 +332,28 @@ h3,
 /* ============================   LINKS ===========================*/
 /* ================================================================*/
 
-.link {
-    color: #85a09d;
-    text-decoration: underline;
+.block_links h2{
+    color: #744b2c;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
+.block_links-list{
+    text-align: center;
+    
+}
+
+.link {
+    color: white;
+    
+    
+}
+.solutions {
+    margin-top: -2%;
+}
 .link:hover {
-    text-decoration: none;
+    color: #ffbf3a;
 }
 
 .link-1 {
@@ -353,7 +370,9 @@ h3,
     text-decoration: none;
 }
 
-
+a {
+    text-decoration: none;
+}
 /* ================================================================*/
 /* ============================  THANKS ===========================*/
 /* ================================================================*/

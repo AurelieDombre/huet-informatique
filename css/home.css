@@ -199,6 +199,13 @@ nav img {
     background-color: #b4b4b4a5;
 }
 
+.about-title_h1{
+    color: #ffbf3a;
+    background-image: linear-gradient(45deg #ffbf3a 85%, #744b2c 15% );
+    font-weight: bold;
+    font-size: 45px;
+}
+
 .about h2 {
     color: #744b2c;
     font-weight: bold;

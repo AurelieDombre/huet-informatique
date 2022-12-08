@@ -379,7 +379,7 @@ a {
 
 .parallax-thanks {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     padding: 2%;
     background-attachment: fixed;
     background-position: center;
@@ -397,6 +397,35 @@ a {
     position: relative;
     width: 65%;
     padding: 2%;
+    font-size: 20px;
     text-align: center;
-    background-color: #744b2c9a;
+    line-height: normal;
+    background-color: #744b2cb7;
+}
+
+.thanks h2{
+    color: #ffbf3a;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+/* ================================================================*/
+/* ============================  FOOTER ===========================*/
+/* ================================================================*/
+
+footer{
+    background: url(../images/nav-bg.jpg) 0 0 repeat;
+    text-align: center;
+    height: 5vh;
+    padding: 0.5%;
+    color: #744b2c;
+}
+
+.footer-mail {
+    color: #744b2c;
+}
+
+.footer-mail:hover {
+    color: #ffbf3a;
 }

@@ -2,7 +2,7 @@ html {
     --text-color: #839e9c;
     --bg-color-section-title: #839e9c;
     --bg-color-section-about: #d2d9d8;
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,7 +11,9 @@ body {
 
 }
 
-
+h1, h2{
+    font-size: calc(1rem + 3vw);
+}
 
 
 /* ================================================================*/
@@ -203,13 +205,13 @@ nav img {
     color: #ffbf3a;
     background-image: linear-gradient(45deg #ffbf3a 85%, #744b2c 15% );
     font-weight: bold;
-    font-size: 45px;
+    font-size: calc(2rem + 2vw);
 }
 
 .about h2 {
     color: #744b2c;
     font-weight: bold;
-    font-size: 45px;
+    font-size: calc(2rem + 2vw);
     /* text-shadow: 2px 2px #b4b4b4fb;; */
 
 }
@@ -226,10 +228,9 @@ nav img {
 .product_section h2 {
     color: #744b2c;
     font-weight: bold;
-    font-size: 40px;
     text-transform: uppercase;
     text-align: center;
-    
+    font-size: calc(2rem + 2vw);
 }
 
 /* ================================================================*/
@@ -245,10 +246,9 @@ nav img {
 .interv_title h2 {
     color: #744b2c;
     font-weight: bold;
-    font-size: 40px;
     text-transform: uppercase;
     padding-top: 3%;
-
+    font-size: calc(2rem + 2vw);
 }
 
 .parallax-interv h3 {
@@ -342,7 +342,7 @@ h3,
 .block_links h2{
     color: #744b2c;
     font-weight: bold;
-    font-size: 40px;
+    font-size: calc(1rem + 1vw);
     text-transform: uppercase;
 }
 
@@ -393,8 +393,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     background-image: url(../images/carte-mere.jpg);
 }
 
@@ -405,6 +404,7 @@ a {
     width: 65%;
     padding: 2%;
     font-size: 20px;
+    font-size: calc(0.5rem + 1vw);
     text-align: center;
     line-height: normal;
     background-color: #744b2cb7;
@@ -414,7 +414,7 @@ a {
     color: #ffbf3a;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: calc(2rem + 2vw);
 }
 
 /* ================================================================*/

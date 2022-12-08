@@ -1,14 +1,14 @@
 html {
     --text-color: #839e9c;
-    --bg-color-section-title:#839e9c;
-    --bg-color-section-about:#d2d9d8;
+    --bg-color-section-title: #839e9c;
+    --bg-color-section-about: #d2d9d8;
 
 }
 
 body {
     font: 12px/18px Arial, Helvetica, sans-serif;
     color: #b4b4b4;
-    
+
 }
 
 
@@ -25,11 +25,12 @@ body {
 
 .nav-bg {
     background: url(../images/nav-bg.jpg) 0 0 repeat;
-    
+
 }
-nav img{
+
+nav img {
     width: 60%;
-    
+
 }
 
 .menu {
@@ -54,11 +55,12 @@ nav img{
     border-left: #c2dcdb 1px solid;
     padding: 16px 0 21px 0;
 }
+
 .menu a :first-child a {
     border-left: transparent 1px solid;
 }
 
-#active{
+#active {
     background: #839e9c;
     color: #fff;
 }
@@ -100,48 +102,49 @@ nav img{
     background-image: url(../images/carte-mere.jpg); 
 } */
 
-.parallax-about{
+.parallax-about {
     width: 100%;
     height: 60vh;
     padding: 2%;
-    background-attachment:fixed;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    display: flex; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url(../images/carte-mere.jpg);
 }
-.parallax-product{
+
+.parallax-product {
     width: 100%;
     height: 40vh;
-    background-attachment:fixed;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    display: flex; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:white;
-    
+    background-color: white;
+
 }
 
-.parallax-space{
+.parallax-space {
     width: 100%;
     height: 10vh;
-    background-attachment:fixed;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    display: flex; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url(../images/carte-mere.jpg);
 }
 
-.parallax-interv{
-    background-color:#d2d9d8;
+.parallax-interv {
+    background-color: #d2d9d8;
     position: relative;
     width: 100%;
     height: 125vh;
@@ -152,7 +155,7 @@ nav img{
     align-items: center;
 }
 
-.parallax-links{
+.parallax-links {
     position: relative;
     width: 100%;
     height: 30vh;
@@ -164,18 +167,19 @@ nav img{
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
 }
 
-.parallax-links .block{
+.parallax-links .block {
     padding: 2%;
     display: flex;
     flex-direction: column;
 }
-.parallax-links h2{
+
+.parallax-links h2 {
     text-align: center;
     color: white;
 }
 
 
-.product_section{
+.product_section {
     color: #839e9c;
     font-size: 20px;
     line-height: 2rem;
@@ -186,8 +190,8 @@ nav img{
 /* =======================  ABOUT  =============================*/
 /* ================================================================*/
 
-.about{
-    color:white;
+.about {
+    color: white;
     position: relative;
     width: 65%;
     padding: 2%;
@@ -195,12 +199,12 @@ nav img{
     background-color: #b4b4b4a5;
 }
 
-.about h2{
+.about h2 {
     color: #744b2c;
     font-weight: bold;
     font-size: 45px;
     /* text-shadow: 2px 2px #b4b4b4fb;; */
-    
+
 }
 
 
@@ -208,11 +212,11 @@ nav img{
 /* =======================  PRODUCTS =============================*/
 /* ================================================================*/
 
-.product_section{
+.product_section {
     padding: 3%;
 }
 
-.product_section h2{
+.product_section h2 {
     color: #744b2c;
     font-weight: bold;
     font-size: 40px;
@@ -225,39 +229,41 @@ nav img{
 /* ================================================================*/
 
 
-.interv_title{
+.interv_title {
     text-align: center;
     padding: 3%;
 }
 
-.interv_title h2{
+.interv_title h2 {
     color: #744b2c;
     font-weight: bold;
     font-size: 40px;
     text-transform: uppercase;
     padding-top: 3%;
 }
-.parallax-interv h3{
+
+.parallax-interv h3 {
     color: #744b2c;
 }
 
-.interv-wrap{
+.interv-wrap {
     display: flex;
 }
 
-.interv-block{
+.interv-block {}
 
-}
-
-.interv-block-left{
+.interv-block-left {
     margin-left: 5%;
 }
 
-.block_p, h3, .block a{
+.block_p,
+h3,
+.block a {
     color: white;
     text-align: center;
 }
-.block{
+
+.block {
     height: 200px;
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
     margin-bottom: 20px;
@@ -265,45 +271,86 @@ nav img{
     width: 90%;
 }
 
-.block_img{
+.block_img {
     padding: 3%;
 }
-.block_text{
+
+.block_text {
     width: 70%;
     padding: 3%;
 }
 
-.block_links{
+.block_links {
     width: calc(100/3);
 }
 
+.reveal {
+    position: relative;
+    opacity: 0;
+}
 
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 /* ================================================================*/
 /* ============================   LINKS ===========================*/
 /* ================================================================*/
 
 .link {
-    color:#85a09d;
-    text-decoration:underline; 
+    color: #85a09d;
+    text-decoration: underline;
 }
 
 .link:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .link-1 {
-    color:#85a09d; 
-    text-transform:uppercase; 
-    text-decoration:underline; 
-    font-size:11px; 
-    line-height:18px; 
-    font-weight:bold; 
-    display:inline-block; 
+    color: #85a09d;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .link-1:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 
@@ -315,22 +362,22 @@ nav img{
     width: 100%;
     height: 30vh;
     padding: 2%;
-    background-attachment:fixed;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    display: flex; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/carte-mere.jpg); 
-} 
+    background-image: url(../images/carte-mere.jpg);
+}
 
 
-.thanks{
-    color:white;
+.thanks {
+    color: white;
     position: relative;
     width: 65%;
     padding: 2%;
     text-align: center;
-    background-color:  #744b2c9a;
+    background-color: #744b2c9a;
 }

@@ -11,22 +11,12 @@ body {
 
 }
 
-h1, h2{
+h1,
+h2 {
     font-size: calc(1rem + 3vw);
     letter-spacing: 1px;
 }
 
-.reveal-visible{
-    opacity: 1;
-    transform: translateY(0);
-    transition: 1s cubic-bezier(.5,0,0,1);
-
-}
-
-.reveal{
-    opacity: 0;
-    transform: translateY(-30px);
-}
 
 /* ================================================================*/
 /* ==================    NAVIGATION  =============================*/
@@ -104,22 +94,28 @@ section h1 {
 
 .parallax-title {
     width: 100%;
-    height: 30vh;
-    background-attachment:fixed;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    display: flex; 
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #839e9c; 
-    background-image: url(../images/carte-mere.jpg); 
+    background-color: #839e9c;
+    background-image: url(../images/carte-mere.jpg);
+
 }
 
+.title-wrapper {}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
 
 .parallax-about {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     padding: 2%;
     background-attachment: fixed;
     background-position: center;
@@ -130,12 +126,15 @@ section h1 {
     align-items: center;
     /* background-image: url(../images/carte-mere.jpg); */
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    margin: -100px 0px;
 
 }
 
 .parallax-product {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,7 +147,7 @@ section h1 {
 
 .parallax-space {
     width: 100%;
-    height: 10vh;
+    height: 30vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,13 +156,16 @@ section h1 {
     flex-direction: column;
     align-items: center;
     background-image: url(../images/carte-mere.jpg);
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    margin: -102px 0px;
 }
 
 .parallax-interv {
     background-color: #d2d9d8;
     position: relative;
     width: 100%;
-    height: 125vh;
+    height: 130vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -173,6 +175,9 @@ section h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    margin: -100px 0px;
 }
 
 .parallax-links {
@@ -182,15 +187,17 @@ section h1 {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 125vh;
+    padding: 5%;
     overflow: hidden;
     display: flex;
     background-image: url(../images/carte-mere.jpg);
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    /* background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%); */
-    
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    margin: -100px 0px;
 }
 
 
@@ -214,33 +221,45 @@ section h1 {
 .about {
     color: white;
     position: relative;
-    width: 65%;
-    padding: 2%;
+    padding: 5%;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 
-.about .wrapper{
-
-}
-.about-title_h1{
+.about-title_h1 {
     font-weight: bold;
     font-size: calc(2rem + 2vw);
-    background-clip:  #ffbf3a;
-    background: linear-gradient(to left,  #ffbf3a 30%,  #839e9c 100%);
+    background-clip: #ffbf3a;
+    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .about h2 {
-    background-clip:  #ffbf3a;
-    background: linear-gradient(to right,  #ffbf3a 40%, #839e9c 100%);
+    background-clip: #ffbf3a;
+    background: linear-gradient(to right, #ffbf3a 40%, #839e9c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-size: calc(2rem + 2vw);
 }
 
-.about p{
+.about p {
     width: 80%;
     min-width: 180px;
     font-size: calc(0.8rem + 0.5vw);
@@ -248,7 +267,7 @@ section h1 {
     margin: 0 auto;
     line-height: calc(0.5rem + 2.5vw);
     letter-spacing: 1px;
-    background-color: #c2dcdbaa ;
+    /* background-color: #c2dcdbaa ; */
 }
 
 
@@ -258,6 +277,7 @@ section h1 {
 
 .product_section {
     padding: 3%;
+    margin-top: 4%;
 }
 
 .product_section h2 {
@@ -374,52 +394,48 @@ h3,
 /* ============================   LINKS ===========================*/
 /* ================================================================*/
 
-.block_links h2{
+.block_links h2 {
     color: #744b2c;
     font-weight: bold;
     font-size: calc(1rem + 1vw);
     text-transform: uppercase;
 }
 
-.block_links{
+.block_links {
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
     width: 25%;
     text-align: center;
 }
 
-.block_links-1{
-    
-}
+.block_links-1 {}
 
-.block_links-2{
-    
-}
+.block_links-2 {}
 
-.block_links-3{
-    
-}
+.block_links-3 {}
 
 
-.block_links-list{
+.block_links-list {
     text-align: center;
-    
+
 }
 
-.block_links .wrapper{
+.block_links .wrapper {
     margin: 30px 0;
 }
 
-.block_links .appear{
+.block_links .appear {
     text-align: center;
 }
 
 .link {
     color: white;
-    
+
 }
+
 .solutions {
     margin-top: -2%;
 }
+
 .link:hover {
     color: #ffbf3a;
 }
@@ -441,6 +457,7 @@ h3,
 a {
     text-decoration: none;
 }
+
 /* ================================================================*/
 /* ============================  THANKS ===========================*/
 /* ================================================================*/
@@ -456,6 +473,7 @@ a {
     flex-direction: column;
     align-items: center;
     background-image: url(../images/carte-mere.jpg);
+
 }
 
 
@@ -471,7 +489,7 @@ a {
     background-color: #744b2cb7;
 }
 
-.thanks h2{
+.thanks h2 {
     color: #ffbf3a;
     font-weight: bold;
     text-transform: uppercase;
@@ -482,7 +500,7 @@ a {
 /* ============================  FOOTER ===========================*/
 /* ================================================================*/
 
-footer{
+footer {
     background: url(../images/nav-bg.jpg) 0 0 repeat;
     text-align: center;
     height: 5vh;

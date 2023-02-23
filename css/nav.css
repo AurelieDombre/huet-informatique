@@ -156,7 +156,7 @@ textarea, label {
 
 .primary,
 .link:hover {
-    color: #FA6862; }
+    color: #fdb92d; }
 
 .no-gutter {
     margin-left: 0;
@@ -339,10 +339,9 @@ textarea, label {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    vertical-align: middle; }
-.page-home .overlay {
-    background-color: rgba(14, 17, 24, 0.97);
+    vertical-align: middle;
 }
+
 
 /* End of container */
 .hexagon-item {

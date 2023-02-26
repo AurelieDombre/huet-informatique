@@ -577,3 +577,51 @@ textarea, label {
 }
 
 
+
+/* ================================================================*/
+/* ======================    NAV-MOBILE  ===========================*/
+/* ================================================================*/
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-items li {
+position: relative;
+}
+
+.items_dropdown ul {
+position: absolute;
+display: none;
+}
+
+.items_dropdown:hover ul {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    
+    .menu-btn {
+        display: block;
+        background-color: #1e2530;
+        color: #abbcbb;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .show-menu {
+        display: block;
+    }
+}

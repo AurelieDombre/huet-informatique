@@ -11,11 +11,21 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="lib/locomotive-scroll.min.css">-->
+    
+    <!-- NAV MOBILE CONFIGURATION 
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />-->
+
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/slider.css">
     
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <title>Accueil</title>
@@ -24,27 +34,59 @@
 <body>
 
     <div class="container-fluid">
-<!--        <header>-->
-<!--                <nav class="navbar sticky-top navbar-expand-lg nav-bg ">-->
-<!--                    <div class="container-fluid">-->
-<!--                        <a class="navbar-brand" href="accueil.html"> <img src="images/logo-brown.png" alt="logo huet infrmatique"></a>-->
-<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"-->
-<!--                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"-->
-<!--                            aria-expanded="false" aria-label="Toggle navigation">-->
-<!--                            <span class="navbar-toggler-icon"></span>-->
-<!--                        </button>-->
-<!--                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">-->
-<!--                            <div class="navbar-nav menu">-->
-<!--                                <a class="nav-link" id="active" aria-current="page" href="accueil.html">Accueil</a>-->
-<!--                                <a class="nav-link" href="about.html">À propos</a>-->
-<!--                                <a class="nav-link" href="services.html">Services</a>-->
-<!--                                <a class="nav-link" href="products.html">Produits</a>-->
-<!--                                <a class="nav-link" href="contacts.html">Contacts</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </nav>-->
-<!--        </header>-->
+<header>
+        <nav class="navbar">
+            <div class="wrapper-nav">
+                <ul class="menu-items">
+                    <li><a href="#home">Accueil</a></li>
+                    <li class="items_dropdown">
+                        <a href="about.html">A Propos</a>
+                        <ul>
+                            <li><a href="">Histoire</a> </li>
+                            <li> <a href="">Nouveautés</a> </li>
+                            <li> <a href="">CG d'intervention</a> </li>
+                            <li> <a href="">CG d'intervention Pro</a> </li>
+                            <li> <a href="">CG ventes</a> </li>
+                            <li> <a href="">Infos Légales</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">Produits</a></li>
+                    <li>
+                        <a href="interv.html">Interventions</a>
+                        <ul>
+                            <li>Diagnostic</li>
+                            <li>Assemblages</li>
+                            <li>Ventes</li>
+                            <li>Réparations</li>
+                            <li>Sites Internets</li>
+                            <li>Professionnels</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                        <ul>
+                            <li>Occasions</li>
+                            <li>Montages</li>
+                            <li>Réparations</li>
+                            <li>Sites Internets</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="solution.html">Solutions</a>
+                        <ul>
+                            <li>Formations</li>
+                            <li>Réseaux</li>
+                            <li>Maquettes</li>
+                            <li>Antivirus</li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+                
+        </nav>    
+    </header>
 
     <header class="site-wrapper" style="background-color: #2d4240">
         <div class="pt-table desktop-768">
@@ -161,7 +203,7 @@
                                             <span class="icon">
                                                 <img src="icon/iconmonstr-computer-thin-32.png">
                                             </span>
-                                            <span class="title">Occasions</span>
+                                            <span class="title">Services</span>
                                         </span>
                                         <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
                                     </a>

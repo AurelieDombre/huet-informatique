@@ -24,9 +24,8 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/slider.css">
-    
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Accueil</title>
 </head>
@@ -35,54 +34,70 @@
 
     <div class="container-fluid">
 <header>
-        <nav class="navbar">
-            <div class="wrapper-nav">
+        <nav class="navbar" >
+            <div class="topnav" id="myTopnav">
                 <ul class="menu-items">
-                    <li><a href="#home">Accueil</a></li>
-                    <li class="items_dropdown">
-                        <a href="about.html">A Propos</a>
-                        <ul>
-                            <li><a href="">Histoire</a> </li>
-                            <li> <a href="">Nouveautés</a> </li>
-                            <li> <a href="">CG d'intervention</a> </li>
-                            <li> <a href="">CG d'intervention Pro</a> </li>
-                            <li> <a href="">CG ventes</a> </li>
-                            <li> <a href="">Infos Légales</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="product.html">Produits</a></li>
-                    <li>
-                        <a href="interv.html">Interventions</a>
-                        <ul>
-                            <li>Diagnostic</li>
-                            <li>Assemblages</li>
-                            <li>Ventes</li>
-                            <li>Réparations</li>
-                            <li>Sites Internets</li>
-                            <li>Professionnels</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                        <ul>
-                            <li>Occasions</li>
-                            <li>Montages</li>
-                            <li>Réparations</li>
-                            <li>Sites Internets</li>
-                            <li>Twitter</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="solution.html">Solutions</a>
-                        <ul>
-                            <li>Formations</li>
-                            <li>Réseaux</li>
-                            <li>Maquettes</li>
-                            <li>Antivirus</li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <a href="#home" class="active">Accueil</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="about.html">A Propos</a> 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <duv class="dropdown-content">
+                            <a href="">Histoire</a> 
+                            <a href="">Nouveautés</a> 
+                            <a href="">CG d'intervention</a> 
+                            <a href="">CG d'intervention Pro</a> 
+                            <a href="">CG ventes</a> 
+                            <a href="">Infos Légales</a>
+                        </duv>
+                    </div>
+                    <a href="product.html">Produits</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="interv.html">Interventions</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content">
+                            <a>Diagnostic</a>
+                            <a>Assemblages</a>
+                            <a>Ventes</a>
+                            <a>Réparations</a>
+                            <a>Sites Internets</a>
+                            <a>Professionnels</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="services.html">Services</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content">
+                            <a>Occasions</a>
+                            <a>Montages</a>
+                            <a>Réparations</a>
+                            <a>Sites Internets</a>
+                            <a>Twitter</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="solution.html">Solutions</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <udivl class="dropdown-content">
+                            <a>Formations</a>
+                            <a>Réseaux</a>
+                            <a>Maquettes</a>
+                            <a>Antivirus</a>
+                        </udivl>
+                    </div>
+                    <a href="contact.html">Contact</a>
                 </ul>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
                 
         </nav>    
@@ -511,7 +526,7 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-<script src="scroll-block.js"></script>
 <script src="js/scroll.js"></script>
-<!--<script src="lib/locomotive-scroll.min.js"></script>-->
+<script src="js/nav.js"></script>
+
 </html>

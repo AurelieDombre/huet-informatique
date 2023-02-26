@@ -104,6 +104,12 @@ nav img {
 }
 
 
+.logo_btn{
+    position: relative;
+    left: calc(95%/2);
+    top: 50px;
+}
+
 /* ================================================================*/
 /* ======================    SECTIONS  ===========================*/
 /* ================================================================*/
@@ -210,7 +216,7 @@ section h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 153.9rem;
+    width: 100%;
     height: 100vh;
     /*padding: 5%;*/
     overflow: hidden;
@@ -332,6 +338,12 @@ section h1 {
 
 .parallax-interv h3 {
     color: #744b2c;
+    background-image: linear-gradient(315deg, #fdb92d 30%, #744b2c 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: calc(0.8rem + 1vw);
+    text-shadow: 1px 1px #744b2c;
 }
 
 .interv-wrap {
@@ -353,7 +365,7 @@ h3,
 
 .block {
     height: 200px;
-    background-image: linear-gradient(315deg, #2d4240 20%, #d2d9d8 80%);
+    background-image: linear-gradient(315deg, #2d4240 35%, #d2d9d8 65%);
     margin-bottom: 20px;
     display: flex;
     width: 90%;
@@ -431,8 +443,8 @@ h3,
 .block_links  {
     background-color: #2d4240;
     /*padding: 3%;*/
-    width: 154rem;
-    height: 50vh;
+    width: calc(150rem + 150vw);
+    height: calc(30rem + 20vh);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -476,13 +488,13 @@ h3,
     color: white;
     font-size: 1.2rem;
     letter-spacing: 1.5px;
-    --b: 0.1em;   /* the thickness of the line */
-    --c: #744b2c; /* the color */
+    --taille: 0.1em;   /* the thickness of the line */
+    --couleur: #744b2c; /* the color */
 
     padding-block: var(--b);
     background:
-            linear-gradient(var(--c) 50%,#ffbf3a 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-            linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+            linear-gradient(var(--couleur) 50%,#ffbf3a 0) 0% calc(100% - var(--pourcentage,0%))/100% 200%,
+            linear-gradient(var(--couleur) 0 0) 0% var(--pourcentage,0%)/var(--pourcentage,0%) var(--taille) no-repeat;
     -webkit-background-clip: text,padding-box;
     background-clip: text,padding-box;
     transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
@@ -491,13 +503,13 @@ h3,
 
 .link:hover {
     color: #ffbf3a;
-    --_p: 100%;
+    --pourcentage: 100%;
     --_s: .3s;
     font-weight: bold;
 }
 
 .link-1 {
-    color: #85a09d;
+    color: #ffbf3a;
     text-transform: uppercase;
     text-decoration: underline;
     font-size: 11px;

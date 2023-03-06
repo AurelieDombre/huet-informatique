@@ -34,73 +34,60 @@
 
     <div class="container-fluid">
 <header>
-        <nav class="navbar" >
-            <div class="topnav" id="myTopnav">
-                <ul class="menu-items">
-                    <a href="#home" class="active">Accueil</a>
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <a href="about.html">A Propos</a> 
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <duv class="dropdown-content">
-                            <a href="">Histoire</a> 
-                            <a href="">Nouveautés</a> 
-                            <a href="">CG d'intervention</a> 
-                            <a href="">CG d'intervention Pro</a> 
-                            <a href="">CG ventes</a> 
-                            <a href="">Infos Légales</a>
-                        </duv>
-                    </div>
-                    <a href="product.html">Produits</a></li>
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <a href="interv.html">Interventions</a>
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        
-                        <div class="dropdown-content">
-                            <a>Diagnostic</a>
-                            <a>Assemblages</a>
-                            <a>Ventes</a>
-                            <a>Réparations</a>
-                            <a>Sites Internets</a>
-                            <a>Professionnels</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <a href="services.html">Services</a>
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        
-                        <div class="dropdown-content">
-                            <a>Occasions</a>
-                            <a>Montages</a>
-                            <a>Réparations</a>
-                            <a>Sites Internets</a>
-                            <a>Twitter</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <a href="solution.html">Solutions</a>
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        
-                        <udivl class="dropdown-content">
-                            <a>Formations</a>
-                            <a>Réseaux</a>
-                            <a>Maquettes</a>
-                            <a>Antivirus</a>
-                        </udivl>
-                    </div>
-                    <a href="contact.html">Contact</a>
+    <nav>
+        <ul class="menu">
+            <li class="logo_nav"><a href="#home" class="nav_link active "><img src="images/logo_HI.png" alt="Logo Huet Informatique"></a></li>
+            <li class="item"><a href="#home" class="nav_link active">Accueil</a></li>
+            <li class="item has-submenu">
+                <a class="nav_link" tabindex="0" href="about.html">A Propos</a>
+                <ul class="submenu">
+                    <li class="subitem"><a class="nav_link" href="">Histoire</a></li>
+                    <li class="subitem"><a class="nav_link" href="">Nouveautés</a> </li>
+                    <li class="subitem"><a class="nav_link" href="">CG d'intervention</a> </li>
+                    <li class="subitem"><a class="nav_link" href="">CG d'intervention Pro</a> </li>
+                    <li class="subitem"><a class="nav_link" href="">CG ventes</a> </li>
+                    <li class="subitem"><a class="nav_link" href="">Infos Légales</a> </li>
                 </ul>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
-                
-        </nav>    
+            </li>
+            <li><a class="nav_link" href="product.html">Produits</a></li>
+            <li class="item has-submenu">
+                <a class="nav_link" tabindex="0" href="interv.html">Interventions</a>
+                <ul class="submenu">
+                    <li class="subitem"><a class="nav_link" href="#">Diagnostic</a></li>
+                    <li class="subitem"><a class="nav_link"  href="#">Assemblages</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Ventes</a></li>
+                    <li class="subitem"><a class="nav_link"  href="#">Réparations</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Sites Internets</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Professionnels</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a class="nav_link" tabindex="0" href="services.html">Services</a>
+                <ul class="submenu">
+                    <li class="subitem"><a class="nav_link" href="#">Occasions</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Montages</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Réparations</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Sites Internets</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Twitter</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a class="nav_link" tabindex="0" href="solution.html">Solutions</a>
+                <ul class="submenu">
+                    <li class="subitem"><a class="nav_link" href="#">Formations</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Réseaux</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Maquettes</a></li>
+                    <li class="subitem"><a class="nav_link" href="#">Antivirus</a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a class="nav_link" href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
     </header>
 
     <header class="site-wrapper" style="background-color: #2d4240">
@@ -528,5 +515,6 @@
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <script src="js/scroll.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/nav-mobile.js"></script>
 
 </html>

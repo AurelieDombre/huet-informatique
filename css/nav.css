@@ -503,9 +503,9 @@ textarea, label {
 
 
 
-.hexagon-item:hover .icon i
+.hexagon-item:hover .icon
 {
-    color:#ff0037;
+    color:#fdb92d;
     transition:0.6s;
 
 }

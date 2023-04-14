@@ -3,7 +3,6 @@
 header{
     background-color: #2d4240;
     box-shadow: 1px 1px 5px 0px gray;
-    position: sticky;
     top: 0;
     width: 100%;
 
@@ -12,6 +11,8 @@ header{
 nav a{
     color: #abbcbb;
 }
+
+
 /* Logo */
 .logo_nav{
     display: inline-block;
@@ -19,7 +20,7 @@ nav a{
     margin-left: 10px;
 }
 
-.logo_nav, .nav{
+.logo_nav, nav{
     top: 0.5rem;
 }
 .logo_nav img{
@@ -28,12 +29,11 @@ nav a{
 
 ul{
     list-style: none;
-    color: #1e2530;
     margin-top: 0.5rem;
 }
 
 /* Nav menu */
-.nav{
+nav{
     width: 100%;
     height: 100%;
     position: fixed;
@@ -54,20 +54,22 @@ ul{
     align-items: center;
 }
 
-.menu li{
-    display: block;
-    padding: 30px;
-    color: #1e2530;
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+@media screen and (min-width: 968px){
+    .menu li{
+        display: block;
+        padding: 30px;
 
+        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+    }
 }
+
 .menu li:hover{
     background-color: #1e2530;
-    color: #fdb92d;
+    z-index: 1;
+
 }
-
-
 
 
 /* Menu Icon */
@@ -126,7 +128,7 @@ ul{
 
 /* Sub nav */
 .subnav-content {
-    background-color:  white;
+
     width: 100%;
     z-index: 1;
     padding: 20px 0 ;
@@ -134,13 +136,13 @@ ul{
 
 }
 .subnav-content a {
-    color: black;
     text-decoration: none;
     padding: 0;
     margin: 10px 0;
     text-align: center;
     background-color: transparent;
 }
+
 .subnav:hover .subnav-content {
     display: flex;
     flex-direction: column;
@@ -151,33 +153,34 @@ ul{
 
 
 /* Responsiveness */
-@media (min-width: 768px) {
-    .nav{
+@media (min-width: 968px) {
+    nav{
         max-height: none;
         top: 0;
         position: relative;
         float: right;
         width: fit-content;
-        /*background-color: transparent;*/
+        background-color: transparent;
     }
     .menu li{
         float: left;
     }
     .menu a:hover{
-        /*background-color: transparent;*/
-        color: gray;
-
+        background-color: transparent;
+        color: #fdb92d;
+        transform: scale(1.1)
     }
 
     .hamb{
         display: none;
     }
+
+
 }
 
 
 
-
-@media (min-width: 768px) {
+@media (min-width: 968px) {
 
     /* Sub nav */
     .subnav-content {
@@ -187,5 +190,27 @@ ul{
     }
     .subnav-content a {
         color: white;
+    }
+}
+
+@media (max-width: 968px){
+    ul{
+        list-style: none;
+        margin-top: 5.5rem;
+        padding-left: 0;
+    }
+
+    .item-wrap {
+        padding: 1rem;
+    }
+
+    nav li:hover{
+        background-color: #1e2530;
+        z-index: 1;
+
+    }
+
+    .menu a:hover{
+        color: #fdb92d;
     }
 }

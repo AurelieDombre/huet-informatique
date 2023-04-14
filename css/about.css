@@ -1,0 +1,53 @@
+html{
+
+
+}
+
+.container-fluid{
+    background-image: url("/images/slider-2.jpg");
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+/***** Slide text **********/
+
+.about_slide{
+    width: 100%;
+    height: 40vh;
+    padding: 2%;
+    background-color: #ffff;
+
+}
+
+
+/***** Partener **********/
+
+.about_partenaire{
+    background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
+    width: 100%;
+    height: 140vh;
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+}
+
+
+
+.about_actu{
+    background-color: #2d4240;
+    width: 100%;
+    height: 140vh;
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+}
+
+.about_citation{
+    background-color: #744b2c;
+    width: 100%;
+    height: 40vh;
+}

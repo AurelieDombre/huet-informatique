@@ -3,27 +3,6 @@ html{
 
 }
 
-.container-fluid{
-    background-image: url("/images/slider-2.jpg");
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    overflow: hidden;
-
-}
-
-/***** Slide text **********/
-
-.about_slide{
-    width: 100%;
-    height: 40vh;
-    padding: 2%;
-    background-color: #ffff;
-
-}
 
 
 /***** Partener **********/
@@ -31,23 +10,83 @@ html{
 .about_partenaire{
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
     width: 100%;
-    height: 140vh;
-    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    height: 100vh;
+    /*position: relative;*/
+    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
+    /*clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
 }
 
-
+/***** News **********/
 
 .about_actu{
     background-color: #2d4240;
     width: 100%;
-    height: 140vh;
-    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    height: 100vh;
+    /*position: relative;*/
+    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
+    /*clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
 }
+
+/**** Citation *********/
 
 .about_citation{
     background-color: #744b2c;
     width: 100%;
     height: 40vh;
+    /*position: relative;*/
+}
+
+/***** Slide text **********/
+
+/*.about_slide{*/
+/*    width: 100%;*/
+/*    height: 30vh;*/
+/*    padding: 2%;*/
+/*    background-color: #1e2530;*/
+/*}*/
+
+.about_slide {
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+    background-color: #1e2530;
+}
+.sliders {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.sliders label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.sliders label:hover,.sliders label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-p {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-p {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
 }

@@ -1,3 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 html{
 
 
@@ -46,16 +53,61 @@ html{
 /*}*/
 
 .about_us {
-    height: 50rem;
+    height: 50vh;
     background-color: #1e2530;
-}
-
-.us-container{
 
 }
 
 .us{
 
+}
+.us-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.us img{
+    width: 26rem;
 
 }
 
+.us span{
+    color: #744b2c;
+    background-image: linear-gradient(315deg, #fdb92d 0%, #744b2c 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: calc(1rem + 1vw);
+    text-transform: uppercase;
+
+}
+
+.us_ici{
+    display: flex;
+}
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+}
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+@keyframes waviy {
+    0%,40%,100% {
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(-20px)
+    }
+}

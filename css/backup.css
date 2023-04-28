@@ -1,0 +1,105 @@
+/********************************/
+/***** Titre About US **********/
+/********************************/
+
+
+/*.titre-us{*/
+/*    font-weight: 700;*/
+/*    text-align: center;*/
+/*    font-size: 6rem;*/
+/*    font-family: Hack, sans-serif;*/
+/*    text-transform: uppercase;*/
+/*    background: linear-gradient(90deg, #744b2c, #fdb92d, #744b2c);*/
+/*    letter-spacing: 5px;*/
+/*    -webkit-background-clip: text;*/
+/*    background-clip: text;*/
+/*    -webkit-text-fill-color: transparent;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 80%;*/
+/*    animation: shine 8s linear infinite;*/
+/*    position: relative;*/
+/*}*/
+
+/*@keyframes shine {*/
+/*    0% {*/
+/*        background-position-x: -500%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position-x: 500%;*/
+/*    }*/
+/*}*/
+
+
+
+
+/*.about_us {*/
+/*    height: 70vh;*/
+/*    background-color: #1e2530;*/
+
+/*}*/
+
+/*.us{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+/*.us-container{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.us_ici,*/
+/*.us_solution,*/
+/*.us_exp{*/
+/*    padding: 2%;*/
+/*    line-height: 3.5rem;*/
+/*    width: 33%;*/
+/*    text-align: center;*/
+/*}*/
+
+
+/*.us img{*/
+/*    width: 26rem;*/
+
+/*}*/
+
+/*.us span{*/
+/*    color: #744b2c;*/
+/*    background-image: linear-gradient(315deg, #2d4240 0%, #839e9c 74%);*/
+/*    -webkit-background-clip: text;*/
+/*    -webkit-text-fill-color: transparent;*/
+/*    font-weight: bold;*/
+/*    font-size: calc(1rem + 1vw);*/
+/*    text-transform: uppercase;*/
+
+/*}*/
+
+/*.us_ici{*/
+/*    display: flex;*/
+/*}*/
+/*https://codepen.io/alvarotrigo/pen/xxLvyOG*/
+/*.waviy {*/
+/*    position: relative;*/
+/*    font-size: 60px;*/
+/*}*/
+
+/*.waviy span {*/
+/*    !*font-family: 'Alfa Slab One', cursive;*!*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    color: #fff;*/
+/*    text-transform: uppercase;*/
+/*    animation: waviy 1s infinite;*/
+/*    animation-delay: calc(.1s * var(--i));*/
+
+/*}*/
+/*@keyframes waviy {*/
+/*    0%,40%,100% {*/
+/*        transform: translateY(0)*/
+/*    }*/
+/*    20% {*/
+/*        transform: translateY(-20px)*/
+/*    }*/
+/*}*/

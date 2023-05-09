@@ -298,7 +298,7 @@ us-container::after {
 /********************************/
 
 .parallax_actu{
-    background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
+    background-color: #839e9c;
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -316,6 +316,7 @@ us-container::after {
 .about_actu{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .titre-us--h3{
@@ -357,6 +358,11 @@ us-container::after {
     padding: 0;
 }
 
+.appear_links-list-us{
+    width: 70%;
+    color: white;
+
+}
 
 /***************************/
 /**** Citation *********/
@@ -365,10 +371,9 @@ us-container::after {
 
 
 .about_citation{
-
-    width: 100%;
-    height: 40vh;
-    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .parallax_citation{
@@ -383,5 +388,70 @@ us-container::after {
     align-items: center;
     /* background-image: url(../images/carte-mere.jpg); */
     background-color:  #744b2c;
-    padding: 3%;
+    padding: 1%;
 }
+
+
+.wordCarousel--citation {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2d4240;
+    margin: 0;
+
+}
+.wordCarousel--citation div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+
+
+}
+.wordCarousel--citation div li {
+
+    color: #2d4240;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+}
+
+.citations{
+    color: white;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+
+}
+
+/*about_us,*/
+/*us-container {*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    overflow: hidden;*/
+/*    background-color: #1e2530;*/
+/*}*/
+
+/*us-container {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    background: darkorange;*/
+/*}*/
+/*us-container::after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width: 110%;*/
+/*    height: 125vh;*/
+/*    background: radial-gradient(#222, #000);*/
+/*    position: absolute;*/
+/*    z-index: -1;*/
+/*    transform: rotate(20deg);*/
+/*    border-radius: 50%;*/
+/*}*/

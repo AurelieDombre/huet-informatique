@@ -6,8 +6,8 @@
 }
 
 
-html{
-/*https://freefrontend.com/css-text-animations/*/
+html {
+    /*https://freefrontend.com/css-text-animations/*/
 
 }
 
@@ -15,7 +15,7 @@ html{
 /***** Titre About US **********/
 /********************************/
 /*https://codepen.io/grohit/pen/mdJqEzK*/
-.titre-us{
+.titre-us {
     font-weight: 700;
     text-align: center;
     font-size: 6rem;
@@ -36,6 +36,7 @@ html{
     0% {
         background-position-x: -500%;
     }
+
     100% {
         background-position-x: 500%;
     }
@@ -50,24 +51,22 @@ html{
 /***************************/
 /*https://codepen.io/EricPorter/pen/JjPmOOb*/
 .wordCarousel {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 400;
     color: #2d4240;
-    margin: 0;
-
 }
+
 .wordCarousel div {
     overflow: hidden;
     position: relative;
     float: right;
     height: 65px;
     padding-top: 10px;
-    margin-top: -10px;
-
-
+    margin-top: 15px;
 }
-.wordCarousel div li {
 
+.wordCarousel div li {
+    font-family: Arial, Helvetica, sans-serif;
     color: #2d4240;
     font-weight: 700;
     padding: 0 10px;
@@ -86,23 +85,33 @@ html{
     animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
 }
 
+.flip4 {
+    -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
 
 @-webkit-keyframes flip2 {
     0% {
         margin-top: -180px;
     }
+
     5% {
         margin-top: -90px;
     }
+
     50% {
         margin-top: -90px;
     }
+
     55% {
         margin-top: 0px;
     }
+
     99.99% {
         margin-top: 0px;
     }
+
     100% {
         margin-top: -180px;
     }
@@ -112,148 +121,201 @@ html{
     0% {
         margin-top: -180px;
     }
+
     5% {
         margin-top: -90px;
     }
+
     50% {
         margin-top: -90px;
     }
+
     55% {
         margin-top: 0px;
     }
+
     99.99% {
         margin-top: 0px;
     }
+
     100% {
         margin-top: -180px;
     }
 }
+
 @-webkit-keyframes flip3 {
     0% {
         margin-top: -270px;
     }
+
     5% {
         margin-top: -180px;
     }
+
     33% {
         margin-top: -180px;
     }
+
     38% {
         margin-top: -90px;
     }
+
     66% {
         margin-top: -90px;
     }
+
     71% {
         margin-top: 0px;
     }
+
     99.99% {
         margin-top: 0px;
     }
+
     100% {
         margin-top: -270px;
     }
 }
+
 @keyframes flip3 {
     0% {
         margin-top: -270px;
     }
+
     5% {
         margin-top: -180px;
     }
+
     33% {
         margin-top: -180px;
     }
+
     38% {
         margin-top: -90px;
     }
+
     66% {
         margin-top: -90px;
     }
+
     71% {
         margin-top: 0px;
     }
+
     99.99% {
         margin-top: 0px;
     }
+
     100% {
         margin-top: -270px;
     }
 }
+
 @-webkit-keyframes flip4 {
     0% {
         margin-top: -360px;
     }
+
     5% {
         margin-top: -270px;
     }
+
     25% {
         margin-top: -270px;
     }
+
     30% {
         margin-top: -180px;
     }
+
     50% {
         margin-top: -180px;
     }
+
     55% {
         margin-top: -90px;
     }
+
     75% {
         margin-top: -90px;
     }
+
     80% {
         margin-top: 0px;
     }
+
     99.99% {
         margin-top: 0px;
     }
+
     100% {
         margin-top: -360px;
     }
 }
 
-about_us,
-us-container {
+@keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+
+    5% {
+        margin-top: -270px;
+    }
+
+    25% {
+        margin-top: -270px;
+    }
+
+    30% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: -180px;
+    }
+
+    55% {
+        margin-top: -90px;
+    }
+
+    75% {
+        margin-top: -90px;
+    }
+
+    80% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -360px;
+    }
+}
+
+.about_us,
+.us-container {
     width: 100%;
-    height: 100vh;
+    height: 20vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1e2530;
-}
-
-us-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: darkorange;
-}
-us-container::after {
-    content: "";
-    display: block;
-    width: 110%;
-    height: 125vh;
-    background: radial-gradient(#222, #000);
-    position: absolute;
-    z-index: -1;
-    transform: rotate(20deg);
-    border-radius: 50%;
-}
-
-
-
-
-.about_us {
     background-color: #abbcbb;
-
 }
+
+.us-container {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /********************************/
 /*********** Parallax **********/
 /********************************/
 
-.parallax_us{
+.parallax_us {
     width: 100%;
     height: 30vh;
     background-attachment: fixed;
@@ -274,30 +336,34 @@ us-container::after {
 /*********** Partener **********/
 /********************************/
 
-.about_partenaire{
+.about_partenaire {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: #2d4240;
 
 }
+
 .interv-wrap-us {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
-.about_partenaire p{
+
+.about_partenaire p {
     font-size: 1rem;
 
 }
-.about_partenaire p_us{
+
+.about_partenaire p_us {
     font-size: 1.5rem;
     padding: 1rem;
 }
+
 /********************************/
 /************* News **********/
 /********************************/
 
-.parallax_actu{
+.parallax_actu {
     background-color: #839e9c;
     position: relative;
     background-attachment: fixed;
@@ -313,13 +379,18 @@ us-container::after {
     justify-content: space-around;
 }
 
-.about_actu{
+.about_actu {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 110vh;
+    justify-content: center;
 }
 
-.titre-us--h3{
+.appear_title{
+    width: 100%;
+}
+
+.titre-us--h3 {
     font-weight: 400;
     text-align: center;
     font-size: 3rem;
@@ -334,7 +405,7 @@ us-container::after {
     position: relative;
 }
 
-.block_links_us{
+.block_links_us {
     flex-direction: row;
     display: flex;
     align-items: center;
@@ -343,22 +414,22 @@ us-container::after {
 
 .block_links_us-1,
 .block_links_us-2,
-.block_links_us-3{
+.block_links_us-3 {
     width: calc(100%/3);
     text-align: center;
     display: flex;
     align-items: center;
 }
 
-.block_links-us-list{
+.block_links-us-list {
     color: #d2d9d8;
 }
 
-.appear_links-list{
+.appear_links-list {
     padding: 0;
 }
 
-.appear_links-list-us{
+.appear_links-list-us {
     width: 70%;
     color: white;
 
@@ -370,13 +441,13 @@ us-container::after {
 
 
 
-.about_citation{
+.about_citation {
     height: 100%;
     display: flex;
     justify-content: center;
 }
 
-.parallax_citation{
+.parallax_citation {
     width: 100%;
     height: 50vh;
     background-attachment: fixed;
@@ -387,28 +458,30 @@ us-container::after {
     flex-direction: column;
     align-items: center;
     /* background-image: url(../images/carte-mere.jpg); */
-    background-color:  #744b2c;
+    background-color: #744b2c;
     padding: 1%;
 }
 
 
 .wordCarousel--citation {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #2d4240;
     margin: 0;
 
 }
+
 .wordCarousel--citation div {
     overflow: hidden;
     position: relative;
     float: right;
-    height: 65px;
+    height: 25vh;
     padding-top: 10px;
     margin-top: -10px;
 
 
 }
+
 .wordCarousel--citation div li {
 
     color: #2d4240;
@@ -419,7 +492,7 @@ us-container::after {
     display: block;
 }
 
-.citations{
+.citations {
     color: white;
     position: relative;
     font-size: 20px;
@@ -427,31 +500,3 @@ us-container::after {
     line-height: normal;
 
 }
-
-/*about_us,*/
-/*us-container {*/
-/*    width: 100%;*/
-/*    height: 100vh;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    overflow: hidden;*/
-/*    background-color: #1e2530;*/
-/*}*/
-
-/*us-container {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    background: darkorange;*/
-/*}*/
-/*us-container::after {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    width: 110%;*/
-/*    height: 125vh;*/
-/*    background: radial-gradient(#222, #000);*/
-/*    position: absolute;*/
-/*    z-index: -1;*/
-/*    transform: rotate(20deg);*/
-/*    border-radius: 50%;*/
-/*}*/

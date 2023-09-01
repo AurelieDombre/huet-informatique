@@ -302,8 +302,10 @@ html {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #abbcbb;
+    color: #744b2c;
+    /* background-color: #abbcbb;*/
 }
+
 
 .us-container {
     display: flex;
@@ -338,9 +340,9 @@ html {
 
 .about_partenaire {
     width: 100%;
-    height: 110vh;
+    height: 100%;
     background-color: #2d4240;
-
+    padding: 3%;
 }
 
 .interv-wrap-us {
@@ -371,7 +373,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     /*padding: 5%;*/
     overflow: hidden;
     display: flex;
@@ -382,11 +384,10 @@ html {
 .about_actu {
     display: flex;
     flex-direction: column;
-    height: 110vh;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.appear_title{
+.appear_title {
     width: 100%;
 }
 
@@ -401,14 +402,14 @@ html {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
-    background-size: 80%;
+    text-align: center;
     position: relative;
 }
 
 .block_links_us {
     flex-direction: row;
     display: flex;
-    align-items: center;
+
     justify-content: space-around;
 }
 
@@ -419,6 +420,7 @@ html {
     text-align: center;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .block_links-us-list {
@@ -445,6 +447,7 @@ html {
     height: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .parallax_citation {
@@ -463,34 +466,7 @@ html {
 }
 
 
-.wordCarousel--citation {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #2d4240;
-    margin: 0;
 
-}
-
-.wordCarousel--citation div {
-    overflow: hidden;
-    position: relative;
-    float: right;
-    height: 25vh;
-    padding-top: 10px;
-    margin-top: -10px;
-
-
-}
-
-.wordCarousel--citation div li {
-
-    color: #2d4240;
-    font-weight: 700;
-    padding: 0 10px;
-    height: 45px;
-    margin-bottom: 45px;
-    display: block;
-}
 
 .citations {
     color: white;
@@ -498,5 +474,96 @@ html {
     font-size: 20px;
     text-align: center;
     line-height: normal;
+    width: 100%;
+}
 
+.text_citations li {
+    overflow: hidden;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    position: absolute;
+    display: block;
+    top: 4em;
+    width: 40rem;
+    font-size: 1.5em;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.item-1 {
+    animation-name: anim-1;
+}
+
+.item-2 {
+    animation-name: anim-2;
+}
+
+.item-3 {
+    animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+
+    0%,
+    8.3% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    8.3%,
+    25% {
+        left: 25%;
+        opacity: 1;
+    }
+
+    33.33%,
+    100% {
+        left: 110%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-2 {
+
+    0%,
+    33.33% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    41.63%,
+    58.29% {
+        left: 25%;
+        opacity: 1;
+    }
+
+    66.66%,
+    100% {
+        left: 110%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-3 {
+
+    0%,
+    66.66% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    74.96%,
+    91.62% {
+        left: 25%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 110%;
+        opacity: 0;
+    }
 }

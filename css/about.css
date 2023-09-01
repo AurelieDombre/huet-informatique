@@ -67,7 +67,10 @@ html {
 
 .wordCarousel div li {
     font-family: Arial, Helvetica, sans-serif;
-    color: #2d4240;
+    background: 744b2c;
+    background: linear-gradient(90deg, #744b2c, #fdb92d, #744b2c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 700;
     padding: 0 10px;
     height: 45px;
@@ -302,7 +305,8 @@ html {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    color: #744b2c;
+    text-transform: uppercase;
+
     /* background-color: #abbcbb;*/
 }
 

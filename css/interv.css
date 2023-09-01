@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    --text-color: #839e9c;
+    --bg-color-section-title: #2d4240;
+    --bg-color-section-about: #d2d9d8;
+    scroll-behavior: smooth;
+}
+

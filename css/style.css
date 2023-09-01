@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+/* ================================================================*/
+/* ============================  FOOTER ===========================*/
+/* ================================================================*/
+
+footer {
+    background-color: #2d4240;
+    text-align: center;
+    height: 10vh;
+    padding: 0.5%;
+    color: #fdb92d;
+}
+
+.footer-mail {
+    color: #abbcbb;
+}
+
+footer a:hover {
+    color: #ffbf3a;
+}
+
+.link_footer {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #abbcbb;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.link_footer a {
+    text-decoration: none;
+    color: #abbcbb;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}

@@ -465,23 +465,3 @@ a {
     text-transform: uppercase;
     font-size: calc(2rem + 2vw);
 }
-
-/* ================================================================*/
-/* ============================  FOOTER ===========================*/
-/* ================================================================*/
-
-footer {
-    background-color: #2d4240;
-    text-align: center;
-    height: 5vh;
-    padding: 0.5%;
-    color: #fdb92d;
-}
-
-.footer-mail {
-    color: #abbcbb;
-}
-
-footer a:hover {
-    color: #ffbf3a;
-}

@@ -12,3 +12,37 @@ html {
     scroll-behavior: smooth;
 }
 
+
+.parallax-head {
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    background-image: url(../images/fond/fond_blanc_abeille.jpg);
+
+}
+
+.parallax-diagnostic {
+    width: 100%;
+    height: 70vh;
+    padding: 2%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url(../images/carte-mere.jpg); */
+    background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    margin: -100px 0px;
+
+}

@@ -13,7 +13,12 @@ html {
 }
 
 
-.parallax-head {
+/* ================================================================*/
+/* ============================   PARALLAX ===========================*/
+/* ================================================================*/
+
+
+.parallax-sections {
     width: 100%;
     height: 50vh;
     background-attachment: fixed;
@@ -23,12 +28,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #839e9c;
     background-image: url(../images/fond/fond_blanc_abeille.jpg);
 
 }
 
-.parallax-diagnostic {
+
+.parallax-diagnosctic {
     width: 100%;
     height: 70vh;
     padding: 2%;
@@ -41,8 +48,117 @@ html {
     align-items: center;
     /* background-image: url(../images/carte-mere.jpg); */
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
-    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
     margin: -100px 0px;
+
+}
+
+.parallax-assemblage {
+    width: 100%;
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d4240;
+
+}
+
+.parallax-vente {
+    width: 100%;
+    height: 20vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/fond/fond_blanc_abeille.jpg);
+    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
+    margin: -102px 0px;
+}
+
+.parallax-reparation {
+    background-color: #d2d9d8;
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
+    /*margin: -100px 0px;*/
+}
+
+.parallax-pro {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /*padding: 5%;*/
+    overflow: hidden;
+    display: flex;
+    background-image: url(../images/fond/fond_blanc_abeille.jpg);
+    align-items: center;
+    justify-content: space-around;
+    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    margin: -100px 0px;*/
+
+}
+
+
+.parallax-pro h2 {
+    text-align: center;
+    color: white;
+}
+
+.parallax-space {
+    width: 100%;
+    height: 20vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/fond/fond_blanc_abeille.jpg);
+    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    margin: -102px 0px;*/
+}
+
+
+/* ================================================================*/
+/* ============================   TITRES ===========================*/
+/* ================================================================*/
+
+.title_interv{
+
+    text-align: center;
+    color: #744b2c;
+    background-image: linear-gradient(315deg, #fdb92d 0%, #744b2c 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    text-transform: uppercase;
 
 }

@@ -18,8 +18,8 @@ html {
 /* ================================================================*/
 
 
-.parallax-sections {
-    width: 100%;
+.parallax-header {
+    width: 98%;
     height: 50vh;
     background-attachment: fixed;
     background-position: center;
@@ -29,8 +29,11 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #839e9c;
-    background-image: url(../images/fond/fond_blanc_abeille.jpg);
+    background-color: #2d4240;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    z-index: -2;
 
 }
 
@@ -50,7 +53,7 @@ html {
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
     /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
-    margin: -100px 0px;
+    margin-top: 25rem;
 
 }
 
@@ -78,7 +81,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/fond/fond_blanc_abeille.jpg);
+    background-image: url(../images/fond/fond_noir_rond.jpg);
     /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
     margin: -102px 0px;
@@ -114,7 +117,7 @@ html {
     /*padding: 5%;*/
     overflow: hidden;
     display: flex;
-    background-image: url(../images/fond/fond_blanc_abeille.jpg);
+    background-image: url(../images/fond/fond_noir_rond.jpg);
     align-items: center;
     justify-content: space-around;
     /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
@@ -139,7 +142,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/fond/fond_blanc_abeille.jpg);
+    background-image: url(../images/fond/fond_noir_rond.jpg);
     /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     margin: -102px 0px;*/
@@ -149,6 +152,17 @@ html {
 /* ================================================================*/
 /* ============================   TITRES ===========================*/
 /* ================================================================*/
+
+.title_interv_h1{
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    background-clip: #ffbf3a;
+    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
 
 .title_interv{
 

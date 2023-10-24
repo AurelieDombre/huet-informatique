@@ -17,6 +17,22 @@ html {
 /* ============================   PARALLAX ===========================*/
 /* ================================================================*/
 
+.parallax {
+    width: 98%;
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    background-image: url(../images/fond/carte-mere.jpg);
+    position: absolute;
+    top: 27rem;
+    left: 1rem;
+}
 
 .parallax-header {
     width: 98%;
@@ -40,8 +56,7 @@ html {
 
 .parallax-diagnosctic {
     width: 100%;
-    height: 100vh;
-    padding: 2%;
+    height: 110vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,12 +64,34 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url(../images/carte-mere.jpg); */
+    background-color: #839e9c;
+    margin-top: 30%;
     background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
-    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
-    margin-top: 25rem;
+    margin-top: 34rem;
 
+}
+
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap_intro_interv_diag{
+    display: flex;
+    align-items: center;
+}
+
+.wrap_image{
+    padding: 2%;
+}
+
+.wrap_text{
+    color: #2d4240;
+}
+
+.wrap_text h2{
+    color: #744b2c;
 }
 
 .parallax-assemblage {
@@ -68,6 +105,7 @@ html {
     flex-direction: column;
     align-items: center;
     background-color: #2d4240;
+
 
 }
 
@@ -84,7 +122,7 @@ html {
     background-image: url(../images/fond/fond_noir_rond.jpg);
     /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
-    margin: -102px 0px;
+
 }
 
 .parallax-reparation {
@@ -101,9 +139,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
-    /*margin: -100px 0px;*/
+
 }
 
 .parallax-pro {
@@ -120,9 +156,6 @@ html {
     background-image: url(../images/fond/fond_noir_rond.jpg);
     align-items: center;
     justify-content: space-around;
-    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    margin: -100px 0px;*/
 
 }
 
@@ -140,12 +173,11 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/fond/fond_noir_rond.jpg);
-    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    margin: -102px 0px;*/
+    background-image: url(../images/fond/carte-mere.jpg);
+
 }
 
 

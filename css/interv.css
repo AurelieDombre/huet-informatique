@@ -109,9 +109,24 @@ html {
 
 }
 
+
+.wrap_assemblage {
+    display: flex;
+    align-items: center;
+}
+.wrap_text_assemblage h2,
+.assemblage_aSavoir h2{
+    color: #744b2c;
+    font-weight: bold;
+}
+
+.assemblage_aSavoir{
+    padding: 3%;
+}
+
 .parallax-vente {
     width: 100%;
-    height: 20vh;
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,11 +134,15 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/fond/fond_noir_rond.jpg);
+    background-color: #744b2c;
     /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
 
 }
+
+
+
+
 
 .parallax-reparation {
     background-color: #d2d9d8;

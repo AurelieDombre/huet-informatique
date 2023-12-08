@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/product.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Produits</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <header>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <li class="logo_nav"><a href="#home" class=" active "><img src="images/logo_HI.png"
+                        alt="Logo Huet Informatique"></a></li>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="item">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-building-5-32.png">
+                            </span>
+                            <a href="home.html" class="active">Accueil</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-computer-8-32.png">
+                            </span>
+                            <a class="" href="product.html">Produits</a>
+                        </div>
+                    </li>
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-wrench-24-32.png">
+                            </span>
+                            <a href="interv.html" class=" subnavbtn">Interventions <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="subnav-content">
+                            <a class="" href="#diagnostic">Diagnostic</a>
+                            <a class="" href="#assemblage">Assemblages</a>
+                            <a class="" href="#vente">Ventes</a>
+                            <a class="" href="#reparation">Réparations</a>
+                            <!--<a class="" href="#">Sites Internets</a>-->
+                            <a class="" href="#professionnel">Professionnels</a>
+                        </div>
+                    </li>
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-computer-thin-32.png">
+                            </span>
+                            <a href="service.html" class=" subnavbtn">Services <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="subnav-content">
+                            <a class="" href="#">Occasions</a>
+                            <a class="" href="#">Montages</a>
+                            <a class="" href="#">Réparations</a>
+                            <!--<a class="" href="#">Sites Internets</a>-->
+                            <a class="" href="#">Twitter</a>
+                        </div>
+                    </li>
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-light-bulb-17-32.png">
+                            </span>
+                            <a href="solution.html" class=" subnavbtn">Solutions <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="subnav-content">
+                            <a class="" href="#">Formations</a>
+                            <a class="" href="#">Réseaux</a>
+                            <a class="" href="#">Maquettes</a>
+                            <a class="" href="#">Antivirus</a>
+                        </div>
+                    </li>
+
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-info-filled-32.png">
+                            </span>
+                            <a href="about.html" class=" subnavbtn">A Propos <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="subnav-content">
+                            <a class="" href="">Nos partenaires</a>
+                            <a class="" href="">Nouveautés</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-email-5-32.png">
+                            </span>
+                            <a class="" href="contact.html">Contact</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="parallax-header">
+                <h1 class="title_marques_h1">Marques</h1>
+            </div>
+            <div class="parallax"></div>
+            <section class="parallax-marques" >
+                <div class="intro-marques">
+                    <p>
+                        Quelques marques de produits avec lesquels nous sommes partenaires... <br/>
+                        Nous choisissons et nous ne vous proposons que des nouveaux produits fiables, durables que nous
+                        avons au
+                        péalable testés en nos ateliers.
+                    </p>
+                </div>
+
+                <table width="930" border="1" cellspacing="2" cellpadding="0">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/microsoft.png" alt="" width="150" height="75" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/office.png" alt="" width="150" height="69" align="middle"
+                                    border="0">
+                            </div>
+                        </td>
+                        <td>
+                            <div align="center">
+                                <img src="./images/partenaires/apple.png" alt="" width="100" height="109" border="0">
+                            </div>
+                        </td>
+                        <td>
+                            <div align="center">
+                                <img src="./images/partenaires/compaq.png" alt="" width="150" height="113" border="0">
+                            </div>
+                        </td>
+                        <td>
+                            <div align="center">
+                                <img src="./images/partenaires/toshiba.png" alt="" width="150" height="100" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/oki.png" alt="" width="150" height="42" border="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/norton.png" alt="" width="150" height="60" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/bitdefender.png" alt="" width="150" height="82"
+                                    border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/TeamRZR.png" alt="" width="150" height="141" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/brother.png" alt="" width="150" height="100" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/D-Link.png" alt="" width="150" height="45" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/fujitsu.1.o.png" alt="" width="150" height="113"
+                                    border="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/dell.png" alt="" width="150" height="150" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/hp.png" alt="" width="150" height="105" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/netgear.png" alt="" width="150" height="113" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/western.png" alt="" width="150" height="113" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/Synology.png" alt="" width="150" height="57" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/asus.png" alt="" width="150" height="113" border="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/samsung.png" alt="" width="150" height="50" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/epson.png" alt="" width="150" height="56" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/canon.png" alt="" width="150" height="75" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/ciel.png" alt="" width="150" height="105" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/ebp.png" alt="" width="150" height="68" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/msi.png" alt="" width="150" height="40" border="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/acer.png" alt="" width="150" height="73" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/Iiyama.png" alt="" width="150" height="44" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/67-large_default.png" alt="" width="150" height="150"
+                                    border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/kingston.png" alt="" width="115" height="140" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/medion.png" alt="" width="150" height="25" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/lexmark.png" alt="" width="150" height="113" border="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/maxtor.png" alt="" width="150" height="100" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/sony.png" alt="" width="150" height="71" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/packard bell.png" alt="" width="150" height="83"
+                                    border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/hitachi.png" alt="" width="150" height="107" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/transcend.png" alt="" width="150" height="29" border="0">
+                            </div>
+                        </td>
+                        <td align="center" valign="middle">
+                            <div align="center">
+                                <img src="./images/partenaires/gigabyte.png" alt="" width="150" height="150" border="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/aorus.png" alt="" width="150"
+                                height="35" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/nec.png" alt="" width="150"
+                                height="66" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/nvidia.png" alt="" width="150"
+                                height="117" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/sandisk.png" alt=""
+                                width="150" height="113" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/liteon.png" alt="" width="150"
+                                height="32" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/ati.png" alt="" width="150"
+                                height="150" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/amd.png" alt="" width="134"
+                                height="150" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/creative.png" alt=""
+                                width="150" height="27" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/g.skill.png" alt=""
+                                width="150" height="74" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/lg.png" alt="" width="150"
+                                height="73" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/logitech.png" alt=""
+                                width="150" height="135" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/adobe.png" alt="" width="150"
+                                height="150" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/autodesk.png" alt=""
+                                width="150" height="150" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/ibm.png" alt="" width="150"
+                                height="150" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/intel.png" alt="" width="150"
+                                height="108" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/freecom.png" alt=""
+                                width="150" height="21" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/belkin.png" alt="" width="150"
+                                height="50" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/targus.png" alt="" width="150"
+                                height="95" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/Cisco.png" alt="" width="150"
+                                height="113" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/htc.png" alt="" width="150"
+                                height="82" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/ricoh.png" alt="" width="150"
+                                height="58" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/yundai.png" alt="" width="150"
+                                height="82" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/eset.png" alt="" width="150"
+                                height="68" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/tomtom.png" alt="" width="150"
+                                height="113" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/apc.png" alt="" width="150"
+                                height="150" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/verbatim.png" alt=""
+                                width="150" height="60" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/iomega.png" alt="" width="150"
+                                height="133" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/corsair.png" alt=""
+                                width="150" height="132" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/case logic.jpg" alt=""
+                                width="150" height="75" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/eaton.png" alt="" width="150"
+                                height="52" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/linksys.png" alt=""
+                                width="150" height="45" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/devolo.gif" alt="" width="150"
+                                height="61" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/imation.png" alt=""
+                                width="150" height="81" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/enermax.png" alt=""
+                                width="150" height="40" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/xerox.png" alt="" width="150"
+                                height="47" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/terra.png" alt="" width="150"
+                                height="105" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/sharp.png" alt="" width="150"
+                                height="150" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/thomson.png" alt=""
+                                width="150" height="69" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/oracle.png" alt="" width="150"
+                                height="21" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/netapp.png" alt="" width="130"
+                                height="150" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/sas.png" alt="" width="150"
+                                height="62" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/kaspersky.png" alt=""
+                                width="149" height="150" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/labtec.png" alt="" width="150"
+                                height="54" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/avanquest.png" alt=""
+                                width="150" height="38" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/unica.png" alt="" width="150"
+                                height="150" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/mge.gif" alt="" width="150"
+                                height="150" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/matrox.png" alt="" width="150"
+                                height="49" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/dicota.jpg" alt="" width="150"
+                                height="64" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/Qtek.gif" alt="" width="150"
+                                height="55" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/panasonic.png" alt=""
+                                width="150" height="45" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/philips.png" alt=""
+                                width="150" height="41" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/pioneer.png" alt=""
+                                width="150" height="42" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/port.png" alt="" width="150"
+                                height="45" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/seagate.png" alt=""
+                                width="150" height="44" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="./images/partenaires/sagem.png" alt="" width="150"
+                                height="31" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/sapphire.png" alt=""
+                                width="150" height="97" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/viewsonic.png" alt=""
+                                width="150" height="140" border="0"></td>
+                        <td align="center" valign="middle"><img src="./images/partenaires/orchestra.png" alt=""
+                                width="150" height="30" border="0">...</td>
+                        <td align="center" valign="middle">etc, </td>
+                        <td align="center" valign="middle"></td>
+                    </tr>
+                </table>
+
+                <div class="conclusion-marques">
+                    <p>
+                        Si un de nos fournisseurs nous fait profiter d'une PROMOTION,
+                        nous en faisons également profiter notre Clientèle
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+
+
+
+    </div>
+
+
+
+    <footer>
+        <div class="link_footer">
+            <a class="" href="">CG d'intervention</a>
+            <a class="" href="">CG d'intervention Pro</a>
+            <a class="" href="">CG ventes</a>
+            <a class="" href="">Infos Légales</a>
+        </div>
+
+        <p class="signature">
+            <strong>HUET Informatique</strong> <span>© 2022</span>
+            Website Design
+            <a class="footer-mail" href="mailto:au.dombre@gmail.com" target="_blank" rel="nofollow" class="link">
+                Aurélie Dombre
+            </a>
+        </p>
+    </footer>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script src="js/scroll.js"></script>
+<script src="js/scroll-block.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/nav-mobile.js"></script>
+
+
+</html>

@@ -1,0 +1,105 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    --text-color: #839e9c;
+    --texte-size: 16px;
+    --texte-line-heigt: 26px;
+    --bg-color-section-title: #2d4240;
+    --bg-color-section-about: #d2d9d8;
+    scroll-behavior: smooth;
+}
+
+
+
+.parallax-header {
+    width: 98%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d4240;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    z-index: -2;
+
+}
+
+.parallax {
+    width: 98%;
+    height: 16vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    background-image: url(../images/fond/carte-mere.jpg);
+    position: absolute;
+    top: 27rem;
+    left: 1rem;
+}
+
+.title_marques_h1{
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    background-clip: #ffbf3a;
+    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.parallax-marques {
+    width: 100%;
+    /*height: 110vh;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    margin-top: 30%;
+    background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
+    margin-top: 28rem;
+    color: #d2d9d8;
+    font-size: var(--texte-size);
+
+
+}
+
+
+.intro-marques p{
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+    border-top:  0.5rem solid #ffbf3a;
+    border-bottom:  0.5rem solid #ffbf3a;
+}
+
+.conclusion-marques{
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+    border-top:  0.5rem solid #ffbf3a;
+    border-bottom:  0.5rem solid #ffbf3a;
+}
+
+
+

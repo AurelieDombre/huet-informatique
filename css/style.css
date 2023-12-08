@@ -17,6 +17,8 @@ footer {
     height: 10vh;
     padding: 0.5%;
     color: #fdb92d;
+    width: 97%;
+    margin: auto;
 }
 
 .footer-mail {

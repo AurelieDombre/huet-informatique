@@ -7,6 +7,8 @@
 
 html {
     --text-color: #839e9c;
+    --texte-size: 16px;
+    --texte-line-heigt: 26px;
     --bg-color-section-title: #2d4240;
     --bg-color-section-about: #d2d9d8;
     scroll-behavior: smooth;
@@ -56,7 +58,7 @@ html {
 
 .parallax-diagnosctic {
     width: 100%;
-    height: 110vh;
+    /*height: 110vh;*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,6 +90,8 @@ html {
 
 .wrap_text{
     color: #2d4240;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
 }
 
 .wrap_text h2{
@@ -113,6 +117,8 @@ html {
 .wrap_assemblage {
     display: flex;
     align-items: center;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
 }
 .wrap_text_assemblage h2,
 .assemblage_aSavoir h2{
@@ -122,6 +128,8 @@ html {
 
 .assemblage_aSavoir{
     padding: 3%;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
 }
 
 .parallax-vente {
@@ -145,7 +153,7 @@ html {
 
 
 .parallax-reparation {
-    background-color: #d2d9d8;
+    background-color: #363843bf;
     position: relative;
     width: 100%;
     /*height: 380vh;*/
@@ -172,7 +180,7 @@ html {
     /*padding: 5%;*/
     overflow: hidden;
     display: flex;
-    background-image: url(../images/fond/fond_noir_rond.jpg);
+    background-image: url(../images/fond/carte-mere.jpg);
     align-items: center;
     justify-content: space-around;
 
@@ -309,11 +317,12 @@ html {
 
 .parallax-reparation h3{
     color: #744b2c;
+    font-weight: bold;
 }
 
 .reparation-p{
-    font-size: 20px;
-    line-height: 26px;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
 }
 
 .reparation-img{
@@ -344,7 +353,8 @@ html {
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 20px;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
 }
 
 .reparation_periph-ecran-p-liste{
@@ -394,9 +404,189 @@ html {
 }
 
 .reparation-appareils-img{
-    width: 20%;
+    width: 50%;
+    padding: 2%;
 }
 
 .reparation-appareils-img img{
-    width: 20%;
+    width: 90%;
+    box-shadow: 3px 5px 0px #2d4240}
+
+.reparation-appareils-liste-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
 }
+
+.reparation-appareils-item{
+    width: calc(90%/7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reparation-appareils-item h4 {
+    font-weight: bold;
+    padding: 2%;
+    color: #fdb92d;
+    text-align: center;
+
+}
+
+.reparation-appareils-texte ul>li{
+    list-style-image: url(../icon/iconmonstr-cpu-vert-16.png);
+    line-height: 2rem;
+
+}
+.reparation-appareils-texte ul>li::marker{
+    width: 10%;
+}
+
+.reparation-appareils-texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ================================================================*/
+/* ============================ PROFESSIONNEL   ====================*/
+/* ================================================================*/
+
+.wrap-pro{
+    background-color: #839e9c;
+    color: #2d4240;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+}
+
+.wrap-pro h3{
+    color: #744b2c;
+    font-weight: bold;
+}
+
+.wrap-pro h4{
+    color: #fdb92d;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro-pro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.intro-pro-img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-pro-texte{
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+    width: 70%;
+}
+
+.intro-pro-img img{
+    width: 70%;
+}
+
+.liste-service-pro{
+    display: flex;
+    align-items: center;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+}
+
+.services-perso-pro,
+.services-pro{
+    width: calc(100%/2);
+    padding: 3%;
+}
+
+.liste-service-pro-img{
+    display: flex;
+    justify-content: center;
+}
+.liste-service-pro-img img{
+    width: 25rem;
+}
+
+.services ul>li{
+    list-style-image: url(../icon/iconmonstr-cpu-jaune-16.png);
+    line-height: 2rem;
+
+}
+
+
+.liste-marques-pro{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.liste-marques-pro-img{
+    display: flex;
+    justify-content: center;
+}
+
+.liste-marques-pro-img img{
+    width: 25rem;
+}
+
+.liste-marques-pro-texte{
+    display: flex;
+    justify-content: center;
+}
+
+.reference-pro,
+.marques-pro,
+.partenaires-pro{
+    width: calc(90%/3);
+}
+
+.list-ul-pro{
+    display: flex;
+    justify-content: center;
+}
+
+.partenaires-pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liste-marques-pro-texte ul>li{
+    list-style-image: url(../icon/iconmonstr-cpu-jaune-16.png);
+    line-height: 2rem;
+
+}
+
+.conclusion-pro{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+.conclusion-pro-img{
+    display: flex;
+    justify-content: center;
+}
+
+.conclusion-pro-img img{
+    width: 28rem;
+}
+
+.assemblage-pro{
+    display: flex;
+    flex-direction: column;
+    
+}
+

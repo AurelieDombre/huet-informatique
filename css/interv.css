@@ -148,7 +148,7 @@ html {
     background-color: #d2d9d8;
     position: relative;
     width: 100%;
-    height: 140vh;
+    /*height: 380vh;*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -184,19 +184,20 @@ html {
     color: white;
 }
 
-.parallax-space {
+.parallax-espace {
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    overflow: hidden;
     flex-direction: column;
     align-items: center;
+    background-color: #839e9c;
     background-image: url(../images/fond/carte-mere.jpg);
-
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -235,4 +236,159 @@ html {
 
 .intro_interv_diag{
     
+}
+
+
+
+/* ================================================================*/
+/* ============================  VENTES   ========================*/
+/* ================================================================*/
+
+.wrap_periph{
+    background-color: rgba(246, 246, 245, 0.933);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+
+/* ================================================================*/
+/* ============================  REPARATION   ========================*/
+/* ================================================================*/
+
+.reparation_periph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+
+.reparation_periph-titre h2{
+    background-clip: #ffbf3a;
+    background: linear-gradient(to right, #ffbf3a 40%, #839e9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.reparation_periph-text{
+    padding: 2%;
+}
+
+.reparation-entete{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2%;
+
+}
+
+.reparation-p-entete{
+    width: 60%;
+}
+.reparation-entete .wrap-image{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.reparation-entete .wrap-image img{
+    width: 50%;
+}
+
+.reparation-p-list{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.parallax-reparation h3{
+    color: #744b2c;
+}
+
+.reparation-p{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.reparation-img{
+    width: 90%;
+
+}
+
+.reparation-corp-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.reparation-corp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.reparation-corp-texte{
+    text-align: center;
+    width: 60%;
+}
+
+
+.reparation_periph-ecrans {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+}
+
+.reparation_periph-ecran-p-liste{
+
+}
+
+.reparation_periph-smartphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    line-height: 26px;
+}
+
+.reparation_periph-smartphone img
+{
+    width: 30%;
+    padding: 2%;
+}
+.reparation_periph-smartphone p{
+    width: 70%;
+    padding: 2%;
+}
+
+.reparation_periph_ecran-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.icon-text{
+    width: calc(90%/5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-text img{
+    padding: 5%;
+}
+
+.icon-text h6{
+    font-weight: bold;
+    text-decoration: underline;
+    color:#744b2c;
 }

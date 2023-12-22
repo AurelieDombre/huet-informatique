@@ -182,6 +182,10 @@ body {
     align-items: center;
 }
 
+.particulier-intro-text{
+    text-align: center;
+}
+
 .img-particulier,
 .particulier-intro-text{
     padding: 2%;
@@ -204,6 +208,15 @@ body {
     align-items: center;
 }
 
+.blocs-texts h3{
+    background-clip: #ffbf3a;
+    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
 .wrap--blocs{
     display: flex;
     align-items: center;
@@ -214,4 +227,17 @@ body {
 
 .bloc-text{
     padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.bloc-text--img,
+.bloc-text--titre-p{
+    padding: 2%;
+}
+
+.bloc-text--titre-p h4{
+    color: #fdb92d;
+    font-size: 2em;
+    font-weight: bold;
 }

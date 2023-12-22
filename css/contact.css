@@ -1,0 +1,53 @@
+html {
+    --text-color: #839e9c;
+    --bg-color-section-title: #2d4240;
+    --bg-color-section-about: #d2d9d8;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 12px/18px Arial, Helvetica, sans-serif;
+    color: #b4b4b4;
+
+}
+
+
+/* ================================================================*/
+/* ============================   PARALLAX ===========================*/
+/* ================================================================*/
+
+.parallax-header {
+    width: 98%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d4240;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    z-index: -2;
+
+}
+
+.parallax {
+    width: 98%;
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    background-image: url(../images/fond/carte-mere.jpg);
+    position: absolute;
+    top: 27rem;
+    left: 1rem;
+}

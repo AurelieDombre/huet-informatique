@@ -1,0 +1,139 @@
+html {
+    --text-color: #839e9c;
+    --bg-color-section-title: #2d4240;
+    --bg-color-section-about: #d2d9d8;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 12px/18px Arial, Helvetica, sans-serif;
+    color: #b4b4b4;
+
+}
+
+
+/* ================================================================*/
+/* ============================   PARALLAX ===========================*/
+/* ================================================================*/
+
+.parallax-header {
+    width: 98%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d4240;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    z-index: -2;
+
+}
+
+.parallax {
+    width: 98%;
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    background-image: url(../images/fond/carte-mere.jpg);
+    position: absolute;
+    top: 27rem;
+    left: 1rem;
+}
+
+.parallax-news {
+    width: 100%;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d2d9d8;
+    margin-top: 36%;
+
+}
+
+
+
+/* ================================================================*/
+/* ============================   TITRES ===========================*/
+/* ================================================================*/
+
+
+
+
+.title_header_h1{
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    background-clip: #ffbf3a;
+    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+
+.title_header_h2{
+    text-align: center;
+    color: #744b2c;
+    background-image: linear-gradient(315deg, #fdb92d 0%, #744b2c 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+
+/* ================================================================*/
+/* ============================   NEWS ===========================*/
+/* ================================================================*/
+
+.wrap_news-item{
+    display: flex;
+    align-items: center;
+    color: #2d4240;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 3%;
+
+}
+
+.wrap_news-img{
+    width: 30%;
+}
+.wrap_news-text{
+    width: 70%;
+}
+.wrap_news-img img{
+    width: 80%;
+}
+
+.source-date{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    color: #744b2c;
+    font-size: 1rem;
+}
+
+.source-date p{
+    padding: 3%;
+}

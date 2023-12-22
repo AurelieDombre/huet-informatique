@@ -1,0 +1,217 @@
+html {
+    --text-color: #839e9c;
+    --bg-color-section-title: #2d4240;
+    --bg-color-section-about: #d2d9d8;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 12px/18px Arial, Helvetica, sans-serif;
+    color: #b4b4b4;
+
+}
+
+
+/* ================================================================*/
+/* ============================   PARALLAX ===========================*/
+/* ================================================================*/
+
+.parallax-header {
+    width: 98%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d4240;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    z-index: -2;
+
+}
+
+.parallax {
+    width: 98%;
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    background-image: url(../images/fond/carte-mere.jpg);
+    position: absolute;
+    top: 27rem;
+    left: 1rem;
+}
+
+
+
+
+.parallax-pro {
+    width: 100%;
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d2d9d8;
+    margin-top: 30%;
+
+}
+
+.parallax-particulier {
+    background-color: #363843bf;
+    position: relative;
+    width: 100%;
+    /*height: 380vh;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-espace {
+    width: 100%;
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    background-image: url(../images/fond/carte-mere.jpg);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* ================================================================*/
+/* ============================   TITRES ===========================*/
+/* ================================================================*/
+
+
+
+
+.title_service_h1{
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    background-clip: #ffbf3a;
+    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.title_service_h2{
+    text-align: center;
+    color: #744b2c;
+    background-image: linear-gradient(315deg, #fdb92d 0%, #744b2c 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    text-transform: uppercase;
+}
+
+
+/* ================================================================*/
+/* ============================ PROFESSIONNELS ====================*/
+/* ================================================================*/
+
+
+.wrap_pro {
+    display: flex;
+    margin-top: 9%;
+    flex-direction: column;
+    align-items: center;
+    color: #839e9c;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.wrap_pro--img--text{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+/* ================================================================*/
+/* ============================ PARTICULIERS ====================*/
+/* ================================================================*/
+
+.wrap_particulier {
+    display: flex;
+    margin-top: 9%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.wrap-particulier-bloc{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+
+.particulier-intro{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.img-particulier,
+.particulier-intro-text{
+    padding: 2%;
+}
+
+.wrap--bloc--text--image {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.particulier-bloc-img,
+.bloc-text--intro{
+    padding: 2%;
+}
+
+.blocs-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap--blocs{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    flex-direction: column;
+
+}
+
+.bloc-text{
+    padding: 2%;
+}

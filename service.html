@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,8 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/service.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -27,8 +29,284 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Services</title>
 </head>
+
 <body>
-    <div class="container-fluid"></div>
+    <div class="container-fluid">
+        <header>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <li class="logo_nav"><a href="#home" class=" active "><img src="images/logo_HI.png"
+                        alt="Logo Huet Informatique"></a></li>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="item">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-building-5-32.png">
+                            </span>
+                            <a href="home.html" class="active">Accueil</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-computer-8-32.png">
+                            </span>
+                            <a class="" href="product.html">Produits</a>
+                        </div>
+                    </li>
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-wrench-24-32.png">
+                            </span>
+                            <a href="interv.html" class=" subnavbtn">Interventions <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="subnav-content">
+                            <a class="" href="#diagnostic">Diagnostic</a>
+                            <a class="" href="#assemblage">Assemblages</a>
+                            <a class="" href="#vente">Ventes</a>
+                            <a class="" href="#reparation">Réparations</a>
+                            <!--<a class="" href="#">Sites Internets</a>-->
+                            <a class="" href="#professionnel">Professionnels</a>
+                        </div>
+                    </li>
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-computer-thin-32.png">
+                            </span>
+                            <a href="service.html" class=" subnavbtn">Services <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="subnav-content">
+                            <a class="" href="#">Occasions</a>
+                            <a class="" href="#">Montages</a>
+                            <a class="" href="#">Réparations</a>
+                            <!--<a class="" href="#">Sites Internets</a>-->
+                            <a class="" href="#">Twitter</a>
+                        </div>
+                    </li>
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-light-bulb-17-32.png">
+                            </span>
+                            <a href="solution.html" class=" subnavbtn">Solutions <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="subnav-content">
+                            <a class="" href="#">Formations</a>
+                            <a class="" href="#">Réseaux</a>
+                            <a class="" href="#">Maquettes</a>
+                            <a class="" href="#">Antivirus</a>
+                        </div>
+                    </li>
+
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-info-filled-32.png">
+                            </span>
+                            <a href="about.html" class=" subnavbtn">A Propos <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="subnav-content">
+                            <a class="" href="">Nos partenaires</a>
+                            <a class="" href="">Nouveautés</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-email-5-32.png">
+                            </span>
+                            <a class="" href="contact.html">Contact</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="parallax-header">
+                <h1 class="title_service_h1">Services</h1>
+            </div>
+            <div class="parallax"></div>
+
+            <section class="parallax-pro">
+                <div class="wrap_pro">
+                    <h2 class="title_service_h2">Professionnels:</h2>
+                    <div class="wrap_pro--img--text">
+                        <div class="wrap_pro-img">
+                            <img src="images/service/service01.png" alt="Personnage qui mesure" class="img-particulier">
+                        </div>
+                        <div class="wrap_pro-p">
+                            <p class="p-pro">
+                                Nous pouvons faire ce que nous faisons déjà pour nos particuliers (voir ci-dessous) en
+                                plus
+                                que ce qui suit.
+                                Bénéficiez de notre expertise en matière de gestion d’infrastructures!
+                                Notre expérience et notre connaissance du marché, de ses acteurs, des solutions
+                                technologiques existantes vous assure d’obtenir un conseil sur mesure,
+                                adapté à vos besoins et vos projets
+                            </p>
+                            <p class="p-pro">
+                                Notre vision globale des performances de vos réseaux et systèmes, nous permettra aussi
+                                d’être force de propositions pour améliorer votre organisation.
+                                Matériels, logiciels (CIEL,EBP,...), installation, mise en route complète,,...
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="parallax-espace"></section>
+
+            <section class="parallax-particulier">
+                <div class="wrap_particulier">
+                    <h2 class="title_service_h2">Particuliers:</h2>
+                    <div class="wrap-particulier-bloc">
+                        <div class="particulier-intro">
+                            <img src="images/service/service03.gif" alt="Personnage qui mesure" class="img-particulier">
+                            <p class="particulier-intro-text">
+                                Aujourd’hui, il est difficile de se passer de l’informatique et il n’est pas toujours
+                                évident de savoir quoi faire sans une aide professionnelle.
+                                Alors, que ce soit pour une installation, pour un dépannage ou tout autre problème
+                                technique, HUET Informatique est votre solution.
+                            </p>
+                        </div>
+                        <div class="blocs-texts">
+                            <h3>QUELQUES-UNS DE NOS DOMAINES D’INTERVENTION :</h3>
+                            <div class="wrap--blocs">
+                                <div class="particulier-bloc-img">
+                                    <img src="images/service/service05.gif" alt="Personnage qui mesure"
+                                        class="img-particulier">
+                                </div>
+                                <div class="wrap--bloc--text">
+                                    <div class="bloc-text">
+                                        <h4>Installation :</h4>
+                                        <p class="bloc-text-p">
+                                            Vous venez d’acquérir un nouvel équipement ?
+                                            Afin que vous n’ayez pas à vous soucier de son installation, HUET
+                                            Informatique prend
+                                            tout en charge.
+                                            Du branchement à la liaison entre vos différents appareils en passant par le
+                                            paramétrage de ce dernier et l’installation de vos logiciels,
+                                            nous sommes là pour faire le nécessaire et en vérifier, sur place, le
+                                            parfait
+                                            fonctionnement.
+
+                                            Vous changez de box et vous souhaitez en installer une pour la première fois
+                                            ?
+                                            Appelez-nous pour l’installer mais aussi pour paramétrer votre réseau
+                                            filaire ou
+                                            WIFI,..
+                                        </p>
+
+                                    </div>
+                                    <div class="bloc-text">
+                                        <h4>Sauvegarde :</h4>
+                                        <p class="bloc-text-p">
+                                            Faites-vous des sauvegardes de vos données régulièrement?
+                                            Si votre PC tombe en panne ou est volé, allez-vous perdre des données
+                                            importantes?
+                                            Nous pouvons vous conseiller et vous aider à faire ces dernières
+                                            que ce soit sur un CD, un DVD à l’aide d’un graveur ou via clef USB ou
+                                            disque dur
+                                            externe.
+                                            Ou pourquoi pas, vous mettre en place un système de sauvegarde automatique.
+                                        </p>
+                                    </div>
+                                    <div class="bloc-text">
+                                        <h4>Sécurité :</h4>
+                                        <p class="bloc-text-p">
+                                            Êtes-vous bien protégé contre les virus informatiques et les intrus
+                                            malveillants?
+                                            Avez-vous pensé à télécharger les dernières mises à jour pour vos logiciels
+                                            et votre
+                                            système d’exploitation?
+                                            Sachez que même cela ne vous tient à l’abri des pirates informatiques.
+
+                                            Pour vérifier, installer ou renforcer la sécurité de votre réseau ou de
+                                            votre
+                                            ordinateur, HUET Informatique est votre allié !
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="blocs-texts">
+                            <h4>Mise en route et Synchronisation Ordinateur – Ipad/Iphone/Tablette/Smartphone:</h4>
+                            <div class="wrap--blocs">
+                                <div class="wrap--bloc--text--image">
+                                    <div class="particulier-bloc-img">
+                                        <img src="images/service/site05.gif" alt="Personnage qui mesure"
+                                            class="img-particulier">
+                                    </div>
+                                    <div class="bloc-text--intro">
+                                        <p class="bloc-text-p--intro">
+                                            Vous vous êtes décidé et avez investi dans une tablette ou un smartphone
+                                            mais vous ne savez pas comment le prendre en main ou comment faire la
+                                            liaison
+                                            avec
+                                            son ordinateur.
+                                            Vous avez depuis peu des problèmes pour faire votre synchronisation ou vous
+                                            connecter à internet ?
+
+                                            Une fois de plus, nous sommes là pour répondre à vos besoins ! Iphone, Ipad,
+                                            Samsung, Blackberry ou autre,
+                                            nous vous guidons dans la prise en main de votre appareil, dans sa
+                                            configuration,
+                                            mais aussi pour les petits ou gros problèmes de fonctionnement que vous
+                                            pourriez
+                                            rencontrer, et cela afin que vous puissiez en jouir en toute tranquillité.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="wrap--bloc--text">
+                                    <div class="bloc-text">
+                                        <h4>Dépannage :</h4>
+                                        <p class="bloc-text-p">
+                                            Votre ordinateur est lent, ne démarre plus,
+                                            vous affiche des messages d’erreur et vous n’avez qu'à venir le déposer à
+                                            notre
+                                            magasin ?
+                                            Pas de problème, nous allons vous apporter notre expertise et nos solutions
+                                            et
+                                            vous
+                                            dirons clairement le coût de l'intervention..
+                                        </p>
+                                    </div>
+                                    <div class="bloc-text">
+                                        <h4>Achats :</h4>
+                                        <p class="bloc-text-p">
+                                            Nous vendons TOUT matériel informatique et TOUS ses consommables ou
+                                            sauvegardes
+                                            Nous vendons également du matériel d'occasion reconditionné par nos soins et
+                                            avec
+                                            une durée de garantie en fonction de l'âge de celui-ci
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
 
     <footer>
         <div class="link_footer">

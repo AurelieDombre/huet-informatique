@@ -89,16 +89,26 @@ html {
     text-align: center;
     margin: 5%;
     padding: 5%;
+    font-size: 18px;
     border-top:  0.5rem solid #ffbf3a;
     border-bottom:  0.5rem solid #ffbf3a;
+    background-clip: #d2d9d8;
+    background: linear-gradient(to left, #fff 100%, #2d4240 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .conclusion-marques{
     text-align: center;
     margin: 5%;
     padding: 5%;
+    font-size: 18px;
     border-top:  0.5rem solid #ffbf3a;
     border-bottom:  0.5rem solid #ffbf3a;
+    background-clip: #d2d9d8;
+    background: linear-gradient(to left, #fff 100%, #2d4240 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 

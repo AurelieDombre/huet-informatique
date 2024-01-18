@@ -242,11 +242,29 @@ html {
 /* ============================   DIAGNOSTIC========================*/
 /* ================================================================*/
 
-.intro_interv_diag{
-    
+.intro_interv_diag b{
+    text-align: center;
 }
 
 
+.savoir-titre{
+    display: flex;
+    align-items: center;
+
+}
+
+.savoir-titre img{
+    display: flex;
+    align-items: center;
+    margin: 1%;
+
+}
+
+b{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
 
 /* ================================================================*/
 /* ============================  VENTES   ========================*/
@@ -258,6 +276,12 @@ html {
     flex-direction: column;
     align-items: center;
     margin-bottom: 3%;
+    
+}
+
+.wrap_ecran{
+    font-size: 1rem;
+    color: white;
 }
 
 

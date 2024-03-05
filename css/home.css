@@ -280,7 +280,7 @@ h3,
 }
 
 .block {
-    height: 200px;
+    height: 208px;
     background-image: linear-gradient(315deg, #ffbf3a 35%, #005287 65%);
     margin-bottom: 20px;
     display: flex;
@@ -294,7 +294,7 @@ h3,
 
 .block_text {
     width: 70%;
-    padding: 3%;
+    padding: 2%;
 }
 
 .link-1{
@@ -393,3 +393,4 @@ h3,
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+

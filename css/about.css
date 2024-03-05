@@ -5,6 +5,17 @@
     scroll-behavior: smooth;
 }
 
+html {
+    --text-color-blue: #01588d;
+    --text-color-white: #fff;
+    --color-section-title: #00112a;
+    --color-title-purple : #8a01fe;
+    --bg-color-section-about: #d2d9d8;
+    --bg-color-transition: linear-gradient(315deg, #00112a 0%, #01588d 74%);
+    --bg-color-title-h2-yellow: linear-gradient(to right, #ffbf3a 40%, #005287 100%);
+    --bg-color-blocks: linear-gradient(315deg, #00112a 0%, #01588d 74%);
+    scroll-behavior: smooth;
+}
 
 html {
     /*https://freefrontend.com/css-text-animations/*/
@@ -22,7 +33,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2d4240;
+    background-color: var(--color-section-title);
     position: absolute;
     top: 5rem;
     left: 1rem;
@@ -44,7 +55,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d2d9d8;
+    background-color: #ffbf3a;
     margin-top: 36%;
 
 }
@@ -65,7 +76,7 @@ html {
     flex-direction: column;
     align-items: center;
     background-color: #839e9c;
-    background-image: url(../images/fond/header.jpg);
+    background-image: url(../images/fond/circuit_blanc.jpg);
     position: absolute;
     top: 32rem;
     left: 1rem;
@@ -98,7 +109,7 @@ html {
     flex-direction: column;
     align-items: center;
     background-color: #839e9c;
-    background-image: url(../images/fond/header.jpg);
+    background-image: url(../images/fond/circuit_blanc.jpg);
     position: relative;
     overflow: hidden;
 }
@@ -115,7 +126,7 @@ html {
     font-weight: bold;
     font-size: calc(2rem + 2vw);
     background-clip: #ffbf3a;
-    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    background: linear-gradient(to left, #ffbf3a 30%, #005287 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 8px;
@@ -125,8 +136,8 @@ html {
 
 .title_header_h2{
     text-align: center;
-    color: #744b2c;
-    background-image: linear-gradient(315deg, #fdb92d 0%, #744b2c 74%);
+    background-clip: #005287;
+    background: var(--bg-color-transition);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -151,7 +162,7 @@ html {
     margin-top: 9%;
     flex-direction: column;
     align-items: center;
-    color: #839e9c;
+    color: #fff;
     font-size: 1.2rem;
     line-height: 2rem;
 }

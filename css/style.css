@@ -12,13 +12,15 @@
 /* ================================================================*/
 
 footer {
-    background-color: #2d4240;
-    text-align: center;
+    background-color: #00112a;
+    
     height: 10vh;
     padding: 0.5%;
     color: #fdb92d;
-    width: 97%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .footer-mail {

@@ -366,7 +366,7 @@ h3,
     flex-direction: column;
     align-items: center;
     /* background-image: url(../images/carte-mere.jpg); */
-    background-color:  #744b2c;
+    background-color:  #ffbf3a;
     padding: 3%;
 }
 
@@ -384,8 +384,12 @@ h3,
 }
 
 .thanks h2 {
-    color: #ffbf3a;
+
     font-weight: bold;
     text-transform: uppercase;
     font-size: calc(2rem + 2vw);
+    background-clip: #005287;
+    background: var(--bg-color-transition);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

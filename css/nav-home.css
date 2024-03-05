@@ -382,7 +382,7 @@ textarea, label {
     -o-transform-origin: center center;
     transform-origin: center center; }
 .hex-item div::before, .hex-item div::after {
-    background-color: #1e2530;
+    background-color: #005287;
     content: "";
     position: absolute;
     width: 100%;
@@ -553,6 +553,9 @@ textarea, label {
     top: 50px;
 }
 
+.logo_btn img{
+    width: 10%;
+}
 
 @media only screen and (max-width: 767px)
 {

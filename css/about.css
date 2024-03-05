@@ -83,7 +83,7 @@ html {
 }
 
 .parallax-particulier {
-    background-color: #363843bf;
+    background-image: var(--bg-color-transition);
     position: relative;
     width: 100%;
     /*height: 380vh;*/
@@ -145,6 +145,17 @@ html {
     text-transform: uppercase;
 }
 
+.title_header_h2_particulier{
+    text-align: center;
+    background-clip: #fdb92d;
+    background: #fdb92d;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    text-transform: uppercase;
+}
+
 .header_list_item{
     font-size: 2rem;
     line-height: 3rem;
@@ -174,7 +185,7 @@ html {
 }
 
 /* ================================================================*/
-/* ============================ PARTICULIERS ====================*/
+/* ============================ PARTICULIERS ======================*/
 /* ================================================================*/
 
 .wrap_particulier {
@@ -229,7 +240,7 @@ html {
 
 .blocs-texts h3{
     background-clip: #ffbf3a;
-    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    background: #ffbf3a;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 5px;
@@ -271,7 +282,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 55%;
     margin: 2%;
 }
 
@@ -284,7 +295,7 @@ html {
 }
 
 .wrap_contact--a{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #2d4240;
 }
@@ -316,7 +327,7 @@ html {
     flex-direction: column;
     align-items: center;
     /* background-image: url(../images/fond/carte-mere.jpg); */
-    background-color: #744b2c;
+    background-color: #fdb92d;
     padding: 1%;
 }
 

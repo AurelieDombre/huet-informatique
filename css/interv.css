@@ -6,11 +6,19 @@
 }
 
 html {
-    --text-color: #839e9c;
-    --texte-size: 16px;
+    --texte-size: 1.2rem;
     --texte-line-heigt: 26px;
-    --bg-color-section-title: #2d4240;
+    --text-color-blue: #01588d;
+    --text-color-white: #fff;
+    --text-color-h1: linear-gradient(to left, #ffbf3a 30%, #005287 100%);
+    --color-section-title: #00112a;
+    --color-title-purple : #8a01fe;
+    --bg-image: url(../images/fond/circuit_blanc.jpg);
     --bg-color-section-about: #d2d9d8;
+    --bg-color-light: #ffbf3a
+    --bg-color-transition: linear-gradient(315deg, #00112a 0%, #01588d 74%);
+    --bg-color-title-h2-yellow: linear-gradient(to right, #ffbf3a 40%, #005287 100%);
+    --bg-color-blocks: linear-gradient(315deg, #00112a 0%, #01588d 74%);
     scroll-behavior: smooth;
 }
 
@@ -29,8 +37,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #839e9c;
-    background-image: url(../images/fond/carte-mere.jpg);
+    background-image: var(--bg-image);
     position: absolute;
     top: 27rem;
     left: 1rem;
@@ -47,7 +54,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2d4240;
+    background-color: var(--color-section-title);
     position: absolute;
     top: 5rem;
     left: 1rem;
@@ -57,8 +64,8 @@ html {
 
 
 .parallax-diagnosctic {
-    width: 100%;
-    /*height: 110vh;*/
+    width: 100%; */
+    /* height: 110vh; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,10 +73,10 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #839e9c;
     margin-top: 30%;
-    background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
-    margin-top: 34rem;
+    background-image: var(--bg-color-transition);
+    margin-top: 39rem;
+    padding: 1%;
 
 }
 
@@ -89,13 +96,13 @@ html {
 }
 
 .wrap_text{
-    color: #2d4240;
+    color: var(--text-color-white);
     font-size: var(--texte-size);
     line-height: var(--texte-line-heigt);
 }
 
 .wrap_text h2{
-    color: #744b2c;
+    color: #ffbf3a;
 }
 
 .parallax-assemblage {
@@ -108,29 +115,12 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #2d4240;
+    background-color: #ffbf3a;
 
 
 }
 
 
-.wrap_assemblage {
-    display: flex;
-    align-items: center;
-    font-size: var(--texte-size);
-    line-height: var(--texte-line-heigt);
-}
-.wrap_text_assemblage h2,
-.assemblage_aSavoir h2{
-    color: #744b2c;
-    font-weight: bold;
-}
-
-.assemblage_aSavoir{
-    padding: 3%;
-    font-size: var(--texte-size);
-    line-height: var(--texte-line-heigt);
-}
 
 .parallax-vente {
     width: 100%;
@@ -142,7 +132,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #744b2c;
+    background-image: var(--bg-color-transition);
     /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
 
@@ -153,7 +143,7 @@ html {
 
 
 .parallax-reparation {
-    background-color: #363843bf;
+    background-color: var(--color-section-title);
     position: relative;
     width: 100%;
     /*height: 380vh;*/
@@ -180,7 +170,7 @@ html {
     /*padding: 5%;*/
     overflow: hidden;
     display: flex;
-    background-image: url(../images/fond/carte-mere.jpg);
+    background-image: var(--bg-image);
     align-items: center;
     justify-content: space-around;
 
@@ -202,8 +192,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #839e9c;
-    background-image: url(../images/fond/carte-mere.jpg);
+    background-image: var(--bg-image);
     position: relative;
     overflow: hidden;
 }
@@ -217,7 +206,7 @@ html {
     font-weight: bold;
     font-size: calc(2rem + 2vw);
     background-clip: #ffbf3a;
-    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    background: var(--text-color-h1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 8px;
@@ -227,8 +216,21 @@ html {
 .title_interv{
 
     text-align: center;
-    color: #744b2c;
-    background-image: linear-gradient(315deg, #fdb92d 0%, #744b2c 74%);
+    background-clip: #ffbf3a;
+    background: linear-gradient(to right, #ffbf3a 50%, #005287 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    text-transform: uppercase;
+
+}
+
+.title_interv_autre{
+
+    text-align: center;
+    background-clip: #005287;
+    background: var(--bg-color-transition);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -267,6 +269,31 @@ b{
 }
 
 /* ================================================================*/
+/* ============================  ASSEMBLAGE  ======================*/
+/* ================================================================*/
+
+
+.wrap_assemblage {
+    display: flex;
+    align-items: center;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+    color: var(--text-color-white);
+}
+.wrap_text_assemblage h2,
+.assemblage_aSavoir h2{
+    color: #005287;
+    font-weight: bold;
+}
+
+.assemblage_aSavoir{
+    padding: 3%;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+    color: var(--text-color-white);
+}
+
+/* ================================================================*/
 /* ============================  VENTES   ========================*/
 /* ================================================================*/
 
@@ -278,10 +305,14 @@ b{
     margin-bottom: 3%;
     
 }
+.wrap_ecran h2{
+    font-size: 2rem;
+    color: #ffbf3a;
+}
 
 .wrap_ecran{
-    font-size: 1rem;
-    color: white;
+    font-size: 1.2rem;
+    color: var(--text-color-white);
 }
 
 
@@ -300,7 +331,7 @@ b{
 
 .reparation_periph-titre h2{
     background-clip: #ffbf3a;
-    background: linear-gradient(to right, #ffbf3a 40%, #839e9c 100%);
+    background: linear-gradient(to right, #ffbf3a 40%, #00112a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -340,7 +371,7 @@ b{
 }
 
 .parallax-reparation h3{
-    color: #744b2c;
+    color: var(--text-color-blue);
     font-weight: bold;
 }
 
@@ -424,7 +455,7 @@ b{
 .icon-text h6{
     font-weight: bold;
     text-decoration: underline;
-    color:#744b2c;
+    color:#01588d;
 }
 
 .reparation-appareils-img{
@@ -434,7 +465,7 @@ b{
 
 .reparation-appareils-img img{
     width: 90%;
-    box-shadow: 3px 5px 0px #2d4240}
+    box-shadow: 3px 5px 0px #005287}
 
 .reparation-appareils-liste-item{
     display: flex;
@@ -458,7 +489,7 @@ b{
 }
 
 .reparation-appareils-texte ul>li{
-    list-style-image: url(../icon/iconmonstr-cpu-vert-16.png);
+    list-style-image: url(../icon/iconmonstr-cpu-jaune-16.png);
     line-height: 2rem;
 
 }
@@ -478,14 +509,14 @@ b{
 /* ================================================================*/
 
 .wrap-pro{
-    background-color: #839e9c;
-    color: #2d4240;
+    background-image: var(--bg-color-transition);
+    color: var(--text-color-white);
     font-size: var(--texte-size);
     line-height: var(--texte-line-heigt);
 }
 
 .wrap-pro h3{
-    color: #744b2c;
+    color: #fdb92d;
     font-weight: bold;
 }
 

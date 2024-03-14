@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+ /*https://freefrontend.com/css-text-animations/*/
 html {
     --text-color-blue: #01588d;
     --text-color-white: #fff;
@@ -14,13 +14,10 @@ html {
     --bg-color-transition: linear-gradient(315deg, #00112a 0%, #01588d 74%);
     --bg-color-title-h2-yellow: linear-gradient(to right, #ffbf3a 40%, #005287 100%);
     --bg-color-blocks: linear-gradient(315deg, #00112a 0%, #01588d 74%);
+    --bg-image: url(../images/fond/circuit_blanc.jpg);
     scroll-behavior: smooth;
 }
 
-html {
-    /*https://freefrontend.com/css-text-animations/*/
-
-}
 
 .parallax-header {
     width: 98%;
@@ -76,7 +73,7 @@ html {
     flex-direction: column;
     align-items: center;
     background-color: #839e9c;
-    background-image: url(../images/fond/circuit_blanc.jpg);
+    background-image: var(--bg-image);
     position: absolute;
     top: 32rem;
     left: 1rem;
@@ -109,7 +106,7 @@ html {
     flex-direction: column;
     align-items: center;
     background-color: #839e9c;
-    background-image: url(../images/fond/circuit_blanc.jpg);
+    background-image: var(--bg-image);
     position: relative;
     overflow: hidden;
 }

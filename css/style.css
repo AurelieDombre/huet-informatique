@@ -27,7 +27,7 @@ html {
 
 .link_document a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color-white);
 }
 
 footer {

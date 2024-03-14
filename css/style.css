@@ -5,14 +5,33 @@
     scroll-behavior: smooth;
 }
 
+html {
+    --text-color-blue: #01588d;
+    --text-color-white: #fff;
+    --color-bg--footer: #00112a;
+    scroll-behavior: smooth;
+}
 
 
 /* ================================================================*/
 /* ============================  FOOTER ===========================*/
 /* ================================================================*/
+.link_document{
+    background-color: var(--color-bg--footer);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+}
+
+.link_document a {
+    text-decoration: none;
+    color: #fff;
+}
 
 footer {
-    background-color: #00112a;
+    background-color: var(--color-bg--footer);
     
     height: 10vh;
     padding: 0.5%;
@@ -51,3 +70,4 @@ footer a:hover {
 .signature{
     border-top: 0.2em solid #ffbf3a;
 }
+

@@ -1,7 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
-    --text-color: #839e9c;
-    --bg-color-section-title: #2d4240;
+    --texte-size: 1.2rem;
+    --texte-line-heigt: 26px;
+    --text-color-blue: #01588d;
+    --text-color-white: #fff;
+    --text-color-h1: linear-gradient(to left, #ffbf3a 30%, #005287 100%);
+    --color-section-title: #00112a;
+    --color-title-purple : #8a01fe;
+    --bg-image: url(../images/fond/circuit_blanc.jpg);
     --bg-color-section-about: #d2d9d8;
+    --bg-color-light: #ffbf3a;
+    --bg-color-transition: linear-gradient(315deg, #00112a 0%, #01588d 74%);
+    --bg-color-title-h2-yellow: linear-gradient(to right, #ffbf3a 100%, #005287 100%);
+    --bg-color-blocks: linear-gradient(315deg, #00112a 0%, #01588d 74%);
     scroll-behavior: smooth;
 }
 
@@ -27,7 +43,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2d4240;
+    background-color: var(--color-section-title);
     position: absolute;
     top: 5rem;
     left: 1rem;
@@ -37,7 +53,7 @@ body {
 
 .parallax {
     width: 98%;
-    height: 30vh;
+    height: 32vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +62,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #839e9c;
-    background-image: url(../images/fond/header.jpg);
+    background-image: var(--bg-image);
     position: absolute;
     top: 27rem;
     left: 1rem;
@@ -62,9 +78,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #839e9c;
+    background-image: var(--bg-color-transition);
     margin-top: 36%;
-
 }
 
 
@@ -79,7 +94,7 @@ body {
     font-weight: bold;
     font-size: calc(2rem + 2vw);
     background-clip: #ffbf3a;
-    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    background: var(--text-color-h1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 8px;

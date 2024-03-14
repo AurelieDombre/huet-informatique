@@ -1,13 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
-    --text-color: #839e9c;
-    --bg-color-section-title: #2d4240;
+    --texte-size: 1.2rem;
+    --texte-line-heigt: 26px;
+    --text-color-blue: #01588d;
+    --text-color-white: #fff;
+    --text-color-h1: linear-gradient(to left, #ffbf3a 30%, #005287 100%);
+    --color-section-title: #00112a;
+    --color-title-purple : #8a01fe;
+    --bg-image: url(../images/fond/circuit_blanc.jpg);
     --bg-color-section-about: #d2d9d8;
+    --bg-color-light: #ffbf3a;
+    --bg-color-transition: linear-gradient(315deg, #00112a 0%, #01588d 74%);
+    --bg-color-title-h2-yellow: linear-gradient(to right, #ffbf3a 40%, #005287 100%);
+    --bg-color-blocks: linear-gradient(315deg, #00112a 0%, #01588d 74%);
     scroll-behavior: smooth;
 }
 
 body {
     font: 12px/18px Arial, Helvetica, sans-serif;
-    color: #b4b4b4;
+    color: #d5e0f5;
 
 }
 
@@ -27,7 +43,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2d4240;
+    background-color: var(--color-section-title);
     position: absolute;
     top: 5rem;
     left: 1rem;
@@ -45,8 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #839e9c;
-    background-image: url(../images/fond/carte-mere.jpg);
+    background-image: var(--bg-image);
     position: absolute;
     top: 27rem;
     left: 1rem;
@@ -57,7 +72,6 @@ body {
 
 .parallax-occas {
     width: 100%;
-    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,13 +79,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d2d9d8;
+    background-color: var(--bg-color-light);
     margin-top: 30%;
 
 }
 
 .parallax-montage {
-    background-color: #363843bf;
+    background-image: var(--bg-color-transition);
     position: relative;
     width: 100%;
     /*height: 380vh;*/
@@ -96,8 +110,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #839e9c;
-    background-image: url(../images/fond/carte-mere.jpg);
+    background-image: var(--bg-image);
     position: relative;
     overflow: hidden;
 }
@@ -115,17 +128,28 @@ body {
     font-weight: bold;
     font-size: calc(2rem + 2vw);
     background-clip: #ffbf3a;
-    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    background: var(--text-color-h1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
 
+.title_service_occas_h2{
+    text-align: center;
+    background-clip: #005287;
+    background: var(--bg-color-transition);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    text-transform: uppercase;
+}
+
 .title_service_h2{
     text-align: center;
-    color: #744b2c;
-    background-image: linear-gradient(315deg, #fdb92d 0%, #744b2c 74%);
+    background-clip: #ffbf3a;
+    background: linear-gradient(to right, #ffbf3a 100%, #005287 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -144,7 +168,7 @@ body {
     margin-top: 9%;
     flex-direction: column;
     align-items: center;
-    color: #839e9c;
+    color: var(--text-color-white);
     font-size: 1.2rem;
     line-height: 2rem;
 }

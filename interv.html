@@ -1,10 +1,984 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/interv.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Interventions</title>
 </head>
+
 <body>
+    <div class="container-fluid">
+
+        <header>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <li class="logo_nav"><a href="#home" class=" active "><img src="images/logo_HI.png"
+                        alt="Logo Huet Informatique"></a></li>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="item">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-building-5-32.png">
+                            </span>
+                            <a href="home.html" class="active">Accueil</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-computer-8-32.png">
+                            </span>
+                            <a class="" href="product.html">Produits</a>
+                        </div>
+                    </li>
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-wrench-24-32.png">
+                            </span>
+                            <a href="interv.html" class=" subnavbtn">Interventions <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="subnav-content">
+                            <a class="" href="#diagnostic">Diagnostic</a>
+                            <a class="" href="#assemblage">Assemblages</a>
+                            <a class="" href="#vente">Ventes</a>
+                            <a class="" href="#reparation">Réparations</a>
+                            <!--<a class="" href="#">Sites Internets</a>-->
+                            <a class="" href="#professionnel">Professionnels</a>
+                        </div>
+                    </li>
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-computer-thin-32.png">
+                            </span>
+                            <a href="service.html" class=" subnavbtn">Services</a>
+                        </div>
+
+                    </li>
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-light-bulb-17-32.png">
+                            </span>
+                            <a href="nouveau.html" class=" subnavbtn">Nouveautés</a>
+                        </div>
+                    </li>
+
+                    <li class="item subnav">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-info-filled-32.png">
+                            </span>
+                            <a href="about.html" class=" subnavbtn">A Propos</a>
+                        </div>
+
+                    </li>
+                    <li class="item">
+                        <div class="item-wrap">
+                            <span class="icon">
+                                <img src="icon/iconmonstr-email-5-32.png">
+                            </span>
+                            <a class="" href="contact.html">Contact</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="container-fluid">
+
+            <div class="parallax-header">
+                <h1 class="title_interv_h1">Interventions</h1>
+            </div>
+            <div class="parallax">
+            </div>
+            <section id="diagnostic" class="parallax-diagnosctic">
+                <div class="wrap">
+                    <h1 class="title_interv">Diagnostic</h1>
+                    <div class="wrap_intro_interv_diag">
+                        <div class="wrap_image reveal fade-left">
+                            <img src="images/interv/cosmonaute_ordi.jpeg" alt="Cosmonaute sur un ordiateur">
+                        </div>
+                        <div class="wrap_text reveal fade-right">
+                            <div class="intro_interv_diag">
+                                <p>
+                                    Votre ordinateur, (portable, smartphone, tablette 'PC,Apple, Android) donne des
+                                    signes de
+                                    faiblesses,
+                                    de lenteur. <br>
+                                    Il ne démarre plus, le son ou la vidéo ne fonctionne plus, la dalle est cassée, le
+                                    connecteur
+                                    d'alimentation est abimé,... <br>
+                                    Votre disque dur externe a fait une chute et vous ne parvenez plus à y accéder ? Ou
+                                    pour
+                                    tout autre
+                                    problème lié à votre machine.
+                                </p>
+                                <p>
+                                    <b>
+                                        Le plus simple est de le déposer dans une de nos agences pour que nous puissions
+                                        effectuer
+                                        un
+                                        diagnostic.
+                                        Ce dernier est de 36€ avec l’établissement d'un devis.
+                                        Si nous nous occupons de cette réparation, nous déduirons la somme du diagnostic
+                                        de
+                                        la
+                                        facture
+                                        finale.
+                                    </b>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Quelques unes de nos prestations :</h2>
+
+
+                                <p>Votre PC est un peu lent ? </p>
+                                <p> Vous n’êtes pas certain d’avoir bien effectué l’ensemble des mises à jour système ou
+                                    logiciels ?
+                                </p>
+                                <p>Vous avez installé et désinstallé beaucoup de logiciels ?</p>
+                                <p>Votre dernier nettoyage complet de disque dur remonte à plus de 6 mois ou vous ne
+                                    l’avez
+                                    jamais
+                                    fait
+                                    ?</p>
+                                <p>
+                                    <b>
+                                        Votre ordinateur est comme votre voiture, il a besoin d’être régulièrement
+                                    entretenu.
+                                    Ainsi, pour lui assurer une plus grande durabilité et stabilité dans le temps,
+                                    nous vous conseillons d’effectuer régulièrement un Nettoyage et Optimisation..
+                                    </b>
+                                    
+                                </p>
+                                <p>
+                                    Vous l’avez démarré ce matin comme tous les jours, seulement, cette fois-ci, c’est
+                                    un écran
+                                    noir
+                                    ou
+                                    bleu qui vous a accueilli ?
+                                    Windows ne se lance pas correctement ?
+                                </p>
+                                <p>Autant d’indications que votre système rencontre un grave problème.</p>
+                                <p>
+                                    <b>
+                                        Pas de panique ! Il va très certainement falloir en faire une réinstallation
+                                    complète.
+                                    Nous nous en chargeons pour vous avec ou sans la récupération de vos données.
+                                    </b>
+                                    
+                                </p>
+
+                                <p>
+                                    Vous venez d’acquérir un nouvel ordinateur et souhaiteriez transférer dessus les
+                                    données de
+                                    l’ancien..
+                                    Même si vous ne l'avez pas acheté chez nous (Bien que ce soit une grave erreur)
+                                    Ou vous souhaitez simplement que vos données soient transférées sur une clef USB ou
+                                    un
+                                    disque
+                                    dur
+                                    externe ? <br>
+                                    <b>Nous nous en chargeons également pour vous</b> 
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </section>
+            <section id="assemblage" class="parallax-assemblage">
+                <h1 class="title_interv">Assemblages</h1>
+                <div class="wrap_assemblage reveal fade-bottom">
+
+                    <div class="wrap_image">
+                        <img src="images/interv/whitman_puzzle.JPG" alt="Personnage qui assemble un puzzle">
+                    </div>
+
+                    <div class="wrap_text_assemblage">
+                        <div class="assemblage_UC">
+                            <h2>Les Unités Centrales :</h2>
+                            <p>
+                                HUET Inform@tique assure l'assemblage de PC sur mesure.
+                                Toutes les configurations assemblées dans notre atelier sont <b>garanties 1 an</b>. <br>
+                                En cas de panne durant la première année de la garantie, HUET Inform@tique
+                                s'engage à remplacer la pièce défectueuse par la même référence de la pièce
+                                ou une référence équivalente sous un délai d'une semaine au maximum.
+                            </p>
+                        </div>
+
+                        <div class="assemblage_portable">
+                            <h2>Les Portables</h2>
+                            <p>
+                                HUET Inform@tique assure la mise en marche de vos portables commandés chez nous.
+                                Nous vendons toutes les marques de portable PC ou Apple
+                                Si vous ne savez pas quoi choisir parmi la multitude de marques
+                                et de références de portables existants;
+                                nous vous conseillerons pour le choix de celui-ci en fonction de vos besoins
+                                et des promotions et des nouveautés du moment.
+                                Nous installons le lancement du système et vérifions le bon fonctionnement des
+                                composants.
+                                Nous vous installons les utilitaires à jour et indispensables du moment.
+                                Nous veillons à ce que les mises à jour système soient faites avant de vous le vendre.
+                            </p>
+                            <p>
+                                Vous le prenez dans notre magasin, vous le mettez en marche
+                                et vous pouvez travailler ou vous divertir sans attendre
+                            </p>
+                            <p>Mimimum 1h00 : OFFERTE</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="assemblage_aSavoir">
+                    <div class="savoir-titre">
+                        <img src="icon/savoir.png" alt="Info">
+                        <h2>A savoir :</h2>
+                    </div>
+                    
+                    <p>
+                        Vous venez avec un modèle de configuration, bien défini, ; nous validerons votre choix
+                        et vous donnerons des conseils si il y a un problème de compatibilité avec ses
+                        composants.
+                    </p>
+                    <p>
+                        Nous ne mettons que des composants de marque
+                        (exemple : MSI, ASUS, GIGABYTE, INTEL, WD, Samsung, Kingston, Corsair...)
+                        Tous les composants installés nous sont livrés en boite individuelle
+                        à l'inverse des composants montés dans les grandes surfaces.
+                        Les unités centrales montées par nous et seulement par nous,
+                        sont testées en atelier pendant 24h
+                        évitant la phrase très désagréable : Panne au déballage !
+                        Les systèmes d'exploitations fournis avec nos Unités Centrales sont de "VRAI" licence,
+                    </p>
+                    <p>
+                        Nous commandons vos composants suivant votre commande afin de faire bénéficier des
+                        dernières
+                        séries
+                        pour votre assemblage
+                        Nous renouvelons une grande partie de notre stock de composants de montage
+                        toutes les semaines, évitant par cela de vous fournir du matériel de fin de série !...
+                        Nos Unités centrales par la-même sont évolutives ce qui vous permettra de les garder
+                        plus
+                        longtemps
+                        en changeant quelques pièces dans le temps
+                        (Processeur, carte graphique...)
+                    </p>
+                    <p>
+                        <b>
+                            Nous sommes à votre disposition pour tout devis d'assemblage que nous vous
+                        communiquerons
+                        suivant
+                        votre choix.
+                        Ce devis est GRATUIT.
+                        </b>
+
+                    </p>
+                </div>
+
+
+            </section>
+
+
+            <section id="vente" class="parallax-vente">
+                <div class="wrap_vente">
+                    <h1 class="title_interv">Ventes</h1>
+                    <div class="wrap_ecran">
+                        <h2>Portables et tablettes PC, Apple, Android</h2>
+
+                        <table class="table table-borderless">
+                            <tr style="vertical-align: middle;">
+                                <td>
+                                    <img src="images/portables/acer.jpg" alt="" width="100" height="56" border="0">
+                                </td>
+                                <td>
+                                    <div align="center">
+                                        <img src="images/portables/asus.jpg" alt="" width="100" height="32" border="0">
+                                    </div>
+                                </td>
+                                <td>
+                                    <img src="images/portables/gigabyte.png" alt="" width="100" height="90" border="0">
+                                </td>
+                                <td>
+                                    <img src="images/portables/hp.jpg" alt="" width="100" height="69" border="0">
+                                </td>
+                                <td>
+                                    <img src="images/portables/lenovo.png" alt="" width="100" height="16" border="0">
+                                </td>
+                            </tr>
+                            <tr style="vertical-align: middle;">
+                                <td>
+                                    <img src="images/partenaires/msi.png" alt="" width="150" height="40" border="0">
+                                </td>
+                                <td>
+                                    <div align="center">
+                                        <img src="images/portables/samsung.jpg" alt="" width="100" height="35"
+                                            align="middle" border="0">
+                                    </div>
+                                </td>
+                                <td>
+                                    <img src="images/portables/sony.png" alt="" width="100" height="60" border="0">
+                                </td>
+                                <td>
+                                    <img src="images/portables/toshiba.jpg" alt="" width="100" height="25" border="0">
+                                </td>
+                                <td>
+                                    <img src="images/portables/vaio.jpg" alt="" width="100" height="41" border="0">
+                                </td>
+                            </tr>
+                            <tr style="vertical-align: middle;">
+                                <td>
+                                    <img src="images/partenaires/apple.png" alt="" width="100" height="109" border="0">
+                                </td>
+                                <td>
+                                    <img src="images/partenaires/microsoft.png" alt="" width="150" height="75"
+                                        border="0">
+                                </td>
+                                <td>
+                                    <img src="images/portables/android.png" alt="" width="100" height="100" border="0">
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p>
+                            Les portables sont garantis 1 an sans surcoût, sauf les notebooks MSI,
+                            qui ont une garantie de 2 ans avec enlèvement sur site et qui sont fournis avec une sacoche
+                            et
+                            une
+                            souris généralement.
+                        </p>
+                        <p>
+                            Dès que nous recevons votre portable,
+                            Nous lançons l'installation,nous vous mettons à jour le système et nous vous installons
+                            certains
+                            utilitaires.
+
+                            Nous testons la fiabilité du système et du matériel.
+                        </p>
+                        <p>
+
+                            Arrivez chez vous, il ne vous reste plus qu'à travailler, surfer ou vous divertir avec
+                            celui-ci.
+
+                            Cette étape nous prend en moyenne 1heure.
+                            (Service GRATUIT).
+                        </p>
+                        <p>
+                            Pour les débutants, une prise en main sera faite en magasin, le jour de l'enlèvement.
+                        </p>
+
+                    </div>
+                    <div class="wrap_periph">
+                        <div>
+                            <h2>Autres périphériques</h2>
+                        </div>
+                        <div>
+                            <img src="images/portables/periph02.png" alt="" width="310" height="513" border="0">
+                            <img src="images/portables/periph03.png" alt="" width="321" height="522" border="0">
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="parallax-espace">
+            </section>
+
+            <section id="reparation" class="parallax-reparation">
+                <div class="wrap_reparation ">
+                    <div class="reparation_titre">
+                        <h1 class="title_interv">Réparations</h1>
+                    </div>
+                    <div class="reparation_periph">
+
+                        <div class="reparation_periph-text">
+                            <div class="reparation_periph-titre">
+                                <h2>Réparations UC, portables et Périph.</h2>
+                            </div>
+                            <div class="reparation-p-liste">
+                                <div class="reparation-entete">
+                                    <div class="wrap-image reveal fade-left">
+                                        <img src="./images/interv/whiteMan_migraine-transformed.jpeg"
+                                            alt="Homme qui se tient la tête">
+                                    </div>
+                                    <div class="reparation-p-entete reveal fade-right">
+                                        <p class="reparation-p">
+                                            Votre appareil est tombé,a pris l'eau ou quoi que ce soit.,
+                                            nous vous proposons la prise en charge de la réparation de votre téléphone
+                                            ou
+                                            tablette.
+                                            Il ou elle sera traité avec soin et sera entre les mains d'un technicien
+                                            très
+                                            rapidement.
+                                            Mon smartphone ou tablette est cassé, comment faire ?.
+                                        </p>
+                                        <p class="reparation-p">
+                                            Mon smartphone ou tablette est cassé, comment faire ?
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="reparation-corp reveal fade-bottom">
+                                    <div class="reparation-corp-texte">
+                                        <h3>CHEZ NOUS EN ATELIER,</h3>
+                                        <p class="reparation-p">
+                                            Vous amenez votre téléphone dans notre magasin.
+                                            Un devis sera fait et sur acceptation du devis
+                                            il sera réparé dans notre atelier dans les plus brefs délais
+                                            en fonction des disponibilités des pièces à changer en stock ou chez nos
+                                            fournisseurs.
+                                            Réparation en toute discretion sans regard du contenu de celui-ci, sauf par
+                                            nécessité.
+                                        </p>
+                                        <p class="reparation-p">On vous demandera si possible si vous voulez qu'on vous
+                                            fasse
+                                            une
+                                            sauvegarde.</p>
+
+                                        <p class="reparation-p">
+                                            Les pièces sont garanties 12 mois
+                                        </p>
+                                        <p class="reparation-p">
+                                            Si lors du lancement une mise à jour est à faire sur le système,
+                                            nous l'effectuerons systématiquement.
+                                        </p>
+                                        <p class="reparation-p">
+                                            Toutes les réparations se font dans nos locaux.
+                                            En remplacant les pièces défectueuses par des neuves ou d'occasions en
+                                            fonction
+                                            de
+                                            ce
+                                            que
+                                            vous
+                                            souhaitez
+                                            Vous avez renversé un peu de liquide sur votre clavier, un objet est tombé
+                                            dessus et
+                                            depuis
+                                            certaines touches ne répondent plus?
+                                        </p>
+                                        <p class="reparation-p">
+                                            Rassurez-vous, il est tout à fait possible de procéder à son remplacement.
+                                            Votre jauge de batterie indique que cette dernière ne se charge plus?
+                                        </p>
+                                        <p class="reparation-p">
+                                            Peut-être que votre batterie est arrivée en fin de vie ou peut-être que
+                                            votre
+                                            chargeur
+                                            n’assure
+                                            plus
+                                            son rôle correctement?
+                                            Là, encore nous pouvons procéder à leur changement.
+                                            Votre ordinateur vous indique que sa mémoire virtuelle est insuffisante?
+                                            Vous
+                                            souhaiteriez
+                                            augmenter
+                                            ses performances?
+                                        </p>
+                                        <p class="reparation-p">
+                                            Nous pouvons sans doute lui rajouter des barrettes mémoires afin de lui
+                                            donner
+                                            plus
+                                            de
+                                            puissance.
+                                        </p>
+
+                                        <p class="reparation-p">
+                                            CLAVIER, CHARGEUR, BATTERIE, BARRETTES MÉMOIRES, LECTEUR CD/DVD, DISQUE DUR
+                                            INTERNE,…
+                                            Nous intervenons sur le remplacement de l’ensemble de ces pièces.
+                                            Venez déposer votre machine à notre magasin, nous établirons un diagnostic
+                                            et un
+                                            devis .
+                                        </p>
+                                        <p class="reparation-p">
+                                            Pour plus de renseignements, téléphonez-nous dès à présent !
+                                        </p>
+                                    </div>
+                                    <div class="reparation-corp-img reveal fade-bottom">
+                                        <img class="reparation-img" src="./images/interv/personnage-3d-reparation.jpg"
+                                            alt="Personnage qui répare un objet">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="reparation_periph-ecrans reveal fade-bottom">
+                        <div class="reparation_periph-titre">
+                            <h2>Smartphones, Tablettes, Consoles, Appareils Photos, GPS, iPOD, Montres Connectées</h2>
+                        </div>
+                        <div class="reparation_periph-ecran-p-liste">
+
+                            <div class="reparation_periph-smartphone reveal fade-left">
+                                <img src="./images/interv/smartphone.png" alt="smartphone" style="width: 30%;">
+                                <p>
+                                    Nous effectuons la réparation de téléphone portables (iPhone, Samsung Galaxy,
+                                    Blackberry..., du
+                                    dépannage de tablettes tactiles (ipad, Galaxy Tab...) et d'iPod, montre connectée
+                                    Apple,
+                                    Appareil
+                                    Photos. et même la majorité des GPS (Voir listes complètes).
+                                    Nos effectuons le dépanne également sur tous les ordinateurs portableset ordinateurs
+                                    fixes.
+                                    HUET Informatique c'est aussi la réparation et le flash de console de jeux (console
+                                    Microsoft
+                                    XBox
+                                    360, console Nintendsos, console Sony).
+                                </p>
+                            </div>
+                            <div class="reparation_periph_ecran-items reveal fade-right">
+                                <div class="icon-text">
+                                    <img src="./icon/iconmonstr-rocket-19-64.png" alt="Fusée">
+                                    <p>
+                                    <h6>La rapidité du service :</h6> <br> Nous prenons en charge votre matériel dès
+                                    votre arrivée
+                                    au
+                                    magasin et
+                                    la
+                                    plupart de nos réparations sont sous 72h.
+                                    </p>
+                                </div>
+                                <div class="icon-text">
+                                    <img src="./icon/iconmonstr-certificate-flyer.png" alt="Garantie certifiée">
+                                    <p>
+                                    <h6>La qualité du service garantie :</h6> <br> La majorité de nos réparations sont
+                                    garanties 1 an.
+                                    Renseignez-vous en magasin..
+                                    </p>
+                                </div>
+                                <div class="icon-text">
+                                    <img src="./icon/iconmonstr-currency-6-64.png" alt="Prix euro">
+                                    <p>
+                                    <h6>La clarté du service :</h6> <br> Dès la prise en charge, nous vous indiqueons
+                                    clairement
+                                    le prix estimé de la réparation.
+                                    On vous demandera si possible si vous voulez qu'on vous fasse une sauvegarde.
+                                    </p>
+                                </div>
+                                <div class="icon-text">
+                                    <img src="./icon/iconmonstr-certificate-14-64.png" alt="garantie">
+                                    <p>
+                                    <h6>Garantie :</h6> Les pièces sont garanties 1 an
+                                    </p>
+                                </div>
+                                <div class="icon-text">
+                                    <img src="./icon/iconmonstr-synchronization-22-64.png" alt="mise à jour">
+                                    <p>
+                                    <h6>Le petit plus :</h6> Si lors du lancement une mise à jour est à faire sur le
+                                    système,
+                                    nous l'effectuerons systématiquement
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="reparation-appareils-marques reveal fade-bottom">
+                            <div class="reparation-appareils-titre">
+                                <h3>APPAREILS ET MARQUES RÉPARÉS</h3>
+                            </div>
+                            <div class="reparation-appareils-liste-item">
+                                <div class="reparation-appareils-item">
+                                    <div class="reparation-appareils-img">
+                                        <img src="./images/interv/mobile_phone.png" alt="smartphone">
+                                    </div>
+                                    <div class="reparation-appareils-texte">
+                                        <h4>Téléphones</h4>
+                                        <ul>
+                                            <li>Acer</li>
+                                            <li>Alcatel</li>
+                                            <li>Apple</li>
+                                            <li>Asus</li>
+                                            <li>Blackberry</li>
+                                            <li>BQ</li>
+                                            <li>Caterpillar</li>
+                                            <li>Google</li>
+                                            <li>Honor</li>
+                                            <li>HTC</li>
+                                            <li>Huawei</li>
+                                            <li>Lenovo</li>
+                                            <li>LG</li>
+                                            <li>Meizu</li>
+                                            <li>Motorola</li>
+                                            <li>Nokia</li>
+                                            <li>OnePlus</li>
+                                            <li>Samsung</li>
+                                            <li>Sony</li>
+                                            <li>Vernee</li>
+                                            <li>Wiko</li>
+                                            <li>Xiaomi</li>
+                                            <li>ZTE</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="reparation-appareils-item">
+                                    <div class="reparation-appareils-img">
+                                        <img src="./images/interv/tablette.png" alt="tablette tactile">
+                                    </div>
+                                    <div class="reparation-appareils-texte">
+                                        <h4>Tablettes</h4>
+                                        <ul>
+                                            <li>Acer</li>
+                                            <li>Apple</li>
+                                            <li>Archos</li>
+                                            <li>Asus</li>
+                                            <li>Blackberry</li>
+                                            <li>BQ</li>
+                                            <li>Dell</li>
+                                            <li>Google</li>
+                                            <li>Honor</li>
+                                            <li>HP</li>
+                                            <li>Lenovo</li>
+                                            <li>LG</li>
+                                            <li>Microsoft</li>
+                                            <li>Motorola</li>
+                                            <li>Polaroid</li>
+                                            <li>Samsung</li>
+                                            <li>Sony</li>
+                                            <li>Toshiba</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="reparation-appareils-item">
+                                    <div class="reparation-appareils-img">
+                                        <img src="./images/interv/console_jeux.jpg" alt="console de jeux">
+                                    </div>
+                                    <div class="reparation-appareils-texte">
+                                        <h4>Consoles</h4>
+                                        <ul>
+                                            <li>Microsoft</li>
+                                            <li>Nintendo</li>
+                                            <li>Retro-gaming</li>
+                                            <li>Sony</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="reparation-appareils-item">
+                                    <div class="reparation-appareils-img">
+                                        <img src="./images/interv/appareil-photo.jpg" alt="appareil photo">
+                                    </div>
+                                    <div class="reparation-appareils-texte">
+                                        <h4>Appareils Photos</h4>
+                                        <ul>
+                                            <li>Canon</li>
+                                            <li>Casio</li>
+                                            <li>Fujifilm</li>
+                                            <li>Kodak</li>
+                                            <li>Nikon</li>
+                                            <li>Olympus</li>
+                                            <li>Panasonic</li>
+                                            <li>Pentax</li>
+                                            <li>Ricoh</li>
+                                            <li>Rollei</li>
+                                            <li>Samsung</li>
+                                            <li>Sigma</li>
+                                            <li>Sony</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="reparation-appareils-item">
+                                    <div class="reparation-appareils-img">
+                                        <img src="./images/interv/GPS.JPG" alt="GPS">
+                                    </div>
+                                    <div class="reparation-appareils-texte">
+                                        <h4>GPS</h4>
+                                        <ul>
+                                            <li>Danew</li>
+                                            <li>Evadeo</li>
+                                            <li>Garmin</li>
+                                            <li>Mappy</li>
+                                            <li>Mio</li>
+                                            <li>Navigon</li>
+                                            <li>Snooper</li>
+                                            <li>Tom Tom</li>
+                                            <li>Twonav</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="reparation-appareils-item">
+                                    <div class="reparation-appareils-img">
+                                        <img src="./images/interv/ipod.jpg" alt="ipod">
+                                    </div>
+                                    <div class="reparation-appareils-texte">
+                                        <h4>iPOD</h4>
+                                        <ul>
+                                            <li>Tous les iPods</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="reparation-appareils-item">
+                                    <div class="reparation-appareils-img">
+                                        <img src="./images/interv/montre.jpg" alt="montre connectée">
+                                    </div>
+                                    <div class="reparation-appareils-texte">
+                                        <h4>Montre Connectées</h4>
+                                        <ul>
+                                            <li>Apple</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </section>
+
+            <section class="parallax-espace">
+            </section>
+
+            <section id="professionnel" class="parallax-pro">
+                <div class="wrap-pro reveal fade-bottom">
+                    <h1 class="title_interv">Professionnels</h1>
+
+
+                    <h3>BÉNÉFICIEZ DE NOTRE EXPERTISE EN MATIÈRE DE GESTION D'INFRASTRUCTURE</h3>
+
+                    <div class="intro-pro">
+                        <div class="intro-pro-img reveal fade-left">
+                            <img src="./images/interv/ordinateur-vectoriel-PhotoRoom.png-PhotoRoom.png"
+                                alt="Dessin d'ordinateur">
+                        </div>
+                        <div class="intro-pro-texte reveal fade-right">
+                            <p>
+                                Notre expérience et notre connaissance du marché, de ses acteurs, des solutions
+                                technologiques
+                                existantes vous assure d’obtenir un
+                                conseil sur mesure, adapté à vos besoins et vos projets.
+                            </p>
+                            <p>
+                                Notre vision globale des performances de vos réseaux et systèmes, nous permettra aussi
+                                d’être
+                                force
+                                de propositions pour améliorer votre organisation.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="liste-service-pro reveal fade-bottom">
+
+                        <div class="services">
+                            <div class="services-perso-pro">
+                                <h4>Services personnalisés auprès des:</h4>
+                                <ul>
+                                    <li>Artisans</li>
+                                    <li>Commerçants</li>
+                                    <li>Professions libérales</li>
+                                    <li>PME</li>
+                                    <li>Associations</li>
+                                    <li>Collectivités locales</li>
+                                    <li>Centres de recherches</li>
+                                    <li>Communautés de Communes</li>
+                                    <li>Contrat de rivières</li>
+                                </ul>
+                            </div>
+
+                            <div class="services-pro">
+                                <h4>Les services</h4>
+                                <ul>
+                                    <li>Conseils et optimisation de votre architecture informatique et réseau.</li>
+                                    <li>Conseils en choix de matériels, logiciels et sauvegardes.</li>
+                                    <li>Suivi personnalisé de nos clients sur appels non surtaxé</li>
+                                    <li>Créations de pub, logos, Site Internet, Vente en ligne...</li>
+                                    <li>Petite imprimerie à votre mesure</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="liste-service-pro-img">
+                            <img src="./images/interv/ordi-phone-vecteur-removebg-preview.png"
+                                alt="Dessin d'ordinateur">
+                        </div>
+                    </div>
+
+                    <div class="liste-marques-pro reveal fade-bottom">
+                        <div class="liste-marques-pro-img">
+                            <img src="./images/interv/partenaire-PhotoRoom.png-PhotoRoom.png" alt="Dessin d'ordinateur">
+                        </div>
+                        <div class="liste-marques-pro-texte">
+
+                            <div class="reference-pro">
+                                <h4>Nos références</h4>
+                                <ul>
+                                    <li>
+                                        Artisans et Commerçants, Enseignants de conduite,
+                                        Agriculteurs, Eleveurs,
+                                    </li>
+                                    <li>
+                                        Médecins, Professeurs, Chercheurs, Directeur de recherches,
+                                        Architectes, Avocats, Huissiers, Experts comptables et Commissaires aux comptes,
+                                        ..
+                                    </li>
+                                    <li>
+                                        Coursiers en assurance, Agences Immobilières
+                                    </li>
+                                    <li>
+                                        Infirmiers, Kinésithérapeutes, Labo d'analyse,
+                                        Centres de recherches scientifiques,
+                                    </li>
+                                    <li>
+                                        Associations, mairies, communautés de communes, syndicats mixtes..
+                                        PME
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="marques-pro">
+                                <h4>Nos marques proposées <br> en matériels</h4>
+                                <div class="list-ul-pro">
+                                    <ul>
+                                        <li>MSI</li>
+                                        <li>IBM</li>
+                                        <li>APPLE</li>
+                                        <li>HP</li>
+                                        <li>Western Digital</li>
+                                        <li>Lacie</li>
+                                        <li>Iomega</li>
+                                        <li>Kingston</li>
+
+                                    </ul>
+                                    <ul>
+                                        <li>Corsair</li>
+                                        <li>Maxtor</li>
+                                        <li>Gigabyte</li>
+                                        <li>Asus</li>
+                                        <li>Intel</li>
+                                        <li>AMD</li>
+                                        <li>NVIDEA</li>
+                                        <li>TYAN</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="partenaires-pro">
+                                <h4>Nos partenaires logiciels</h4>
+                                <ul>
+                                    <li>EURODAY</li>
+                                    <li>Microsoft</li>
+                                    <li>Adobe</li>
+                                    <li>Autodesk</li>
+                                    <li>Rhinoceros</li>
+                                    <li>Cuda zone</li>
+                                    <li>Micro Application</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conclusion-pro reveal fade-right">
+
+                        <div class="assemblage-pro">
+                            <h4>Nos assemblages matériels</h4>
+                            <p>
+                                HUET INFORMATIQUE, assemble et configure ses unités centrales et ses portables,
+                                afin de choisir scrupuleusement ses composants et de mieux répondre aux besoins et
+                                problèmes
+                                éventuels de ses clients.
+                            </p>
+                            <p>
+                                Ainsi dans ce cas, C'est HUET Informatique, qui gère dans ses ateliers les SAV,
+                                permettant
+                                une
+                                réactivité immédiate face à un problème ponctuel.
+                                Aucune attente de maintenance par une marque étant nécessaire ainsi.
+                            </p>
+                        </div>
+                        <div class="conclusion-pro-img">
+                            <img src="./images/interv/3d-render-code-testing-functional-removebg-preview.png"
+                                alt="Dessin d'ordinateur">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- -------------TODO: Mettre en place un moyen de télécharger en pdf les CG------------------------------- -->
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="link_footer">
+            <a class="" href="" download="">CG d'intervention</a>
+            <a class="" href="" download="">CG d'intervention Pro</a>
+            <a class="" href="" download="">CG ventes</a>
+            <a class="" href="">Infos Légales</a>
+        </div>
+
+        <p class="signature">
+            <strong>HUET Informatique</strong> <span>© 2022</span>
+            Website Design
+            <a class="footer-mail" href="mailto:au.dombre@gmail.com" target="_blank" rel="nofollow" class="link">
+                Aurélie Dombre
+            </a>
+        </p>
+    </footer>
+
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script src="js/scroll.js"></script>
+<script src="js/scroll-block.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/nav-mobile.js"></script>
+
+
 </html>

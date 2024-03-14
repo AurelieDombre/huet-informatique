@@ -1,0 +1,616 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    --text-color: #839e9c;
+    --texte-size: 16px;
+    --texte-line-heigt: 26px;
+    --bg-color-section-title: #2d4240;
+    --bg-color-section-about: #d2d9d8;
+    scroll-behavior: smooth;
+}
+
+
+/* ================================================================*/
+/* ============================   PARALLAX ===========================*/
+/* ================================================================*/
+
+.parallax {
+    width: 98%;
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    background-image: url(../images/fond/carte-mere.jpg);
+    position: absolute;
+    top: 27rem;
+    left: 1rem;
+}
+
+.parallax-header {
+    width: 98%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d4240;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    z-index: -2;
+
+}
+
+
+.parallax-diagnosctic {
+    width: 100%;
+    /*height: 110vh;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    margin-top: 30%;
+    background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
+    margin-top: 34rem;
+
+}
+
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap_intro_interv_diag{
+    display: flex;
+    align-items: center;
+}
+
+.wrap_image{
+    padding: 2%;
+}
+
+.wrap_text{
+    color: #2d4240;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+}
+
+.wrap_text h2{
+    color: #744b2c;
+}
+
+.parallax-assemblage {
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d4240;
+
+
+}
+
+
+.wrap_assemblage {
+    display: flex;
+    align-items: center;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+}
+.wrap_text_assemblage h2,
+.assemblage_aSavoir h2{
+    color: #744b2c;
+    font-weight: bold;
+}
+
+.assemblage_aSavoir{
+    padding: 3%;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+}
+
+.parallax-vente {
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #744b2c;
+    /*-webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));*/
+
+}
+
+
+
+
+
+.parallax-reparation {
+    background-color: #363843bf;
+    position: relative;
+    width: 100%;
+    /*height: 380vh;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parallax-pro {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /*padding: 5%;*/
+    overflow: hidden;
+    display: flex;
+    background-image: url(../images/fond/carte-mere.jpg);
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.parallax-pro h2 {
+    text-align: center;
+    color: white;
+}
+
+.parallax-espace {
+    width: 100%;
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #839e9c;
+    background-image: url(../images/fond/carte-mere.jpg);
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ================================================================*/
+/* ============================   TITRES ===========================*/
+/* ================================================================*/
+
+.title_interv_h1{
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    background-clip: #ffbf3a;
+    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.title_interv{
+
+    text-align: center;
+    color: #744b2c;
+    background-image: linear-gradient(315deg, #fdb92d 0%, #744b2c 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    text-transform: uppercase;
+
+}
+
+
+/* ================================================================*/
+/* ============================   DIAGNOSTIC========================*/
+/* ================================================================*/
+
+.intro_interv_diag b{
+    text-align: center;
+}
+
+
+.savoir-titre{
+    display: flex;
+    align-items: center;
+
+}
+
+.savoir-titre img{
+    display: flex;
+    align-items: center;
+    margin: 1%;
+
+}
+
+b{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ================================================================*/
+/* ============================  VENTES   ========================*/
+/* ================================================================*/
+
+.wrap_periph{
+    background-color: rgba(246, 246, 245, 0.933);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    
+}
+
+.wrap_ecran{
+    font-size: 1rem;
+    color: white;
+}
+
+
+/* ================================================================*/
+/* ============================  REPARATION   ========================*/
+/* ================================================================*/
+
+.reparation_periph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+
+.reparation_periph-titre h2{
+    background-clip: #ffbf3a;
+    background: linear-gradient(to right, #ffbf3a 40%, #839e9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.reparation_periph-text{
+    padding: 2%;
+}
+
+.reparation-entete{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2%;
+
+}
+
+.reparation-p-entete{
+    width: 60%;
+}
+.reparation-entete .wrap-image{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.reparation-entete .wrap-image img{
+    width: 50%;
+}
+
+.reparation-p-list{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.parallax-reparation h3{
+    color: #744b2c;
+    font-weight: bold;
+}
+
+.reparation-p{
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+}
+
+.reparation-img{
+    width: 90%;
+
+}
+
+.reparation-corp-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.reparation-corp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.reparation-corp-texte{
+    text-align: center;
+    width: 60%;
+}
+
+
+.reparation_periph-ecrans {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+}
+
+.reparation_periph-ecran-p-liste{
+
+}
+
+.reparation_periph-smartphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    line-height: 26px;
+}
+
+.reparation_periph-smartphone img
+{
+    width: 30%;
+    padding: 2%;
+}
+.reparation_periph-smartphone p{
+    width: 70%;
+    padding: 2%;
+}
+
+.reparation_periph_ecran-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.icon-text{
+    width: calc(90%/5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-text img{
+    padding: 5%;
+}
+
+.icon-text h6{
+    font-weight: bold;
+    text-decoration: underline;
+    color:#744b2c;
+}
+
+.reparation-appareils-img{
+    width: 50%;
+    padding: 2%;
+}
+
+.reparation-appareils-img img{
+    width: 90%;
+    box-shadow: 3px 5px 0px #2d4240}
+
+.reparation-appareils-liste-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.reparation-appareils-item{
+    width: calc(90%/7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reparation-appareils-item h4 {
+    font-weight: bold;
+    padding: 2%;
+    color: #fdb92d;
+    text-align: center;
+
+}
+
+.reparation-appareils-texte ul>li{
+    list-style-image: url(../icon/iconmonstr-cpu-vert-16.png);
+    line-height: 2rem;
+
+}
+.reparation-appareils-texte ul>li::marker{
+    width: 10%;
+}
+
+.reparation-appareils-texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ================================================================*/
+/* ============================ PROFESSIONNEL   ====================*/
+/* ================================================================*/
+
+.wrap-pro{
+    background-color: #839e9c;
+    color: #2d4240;
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+}
+
+.wrap-pro h3{
+    color: #744b2c;
+    font-weight: bold;
+}
+
+.wrap-pro h4{
+    color: #fdb92d;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro-pro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.intro-pro-img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-pro-texte{
+    font-size: var(--texte-size);
+    line-height: var(--texte-line-heigt);
+    width: 70%;
+}
+
+.intro-pro-img img{
+    width: 70%;
+}
+
+.liste-service-pro{
+    display: flex;
+    align-items: center;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+}
+
+.services-perso-pro,
+.services-pro{
+    width: calc(100%/2);
+    padding: 3%;
+}
+
+.liste-service-pro-img{
+    display: flex;
+    justify-content: center;
+}
+.liste-service-pro-img img{
+    width: 25rem;
+}
+
+.services ul>li{
+    list-style-image: url(../icon/iconmonstr-cpu-jaune-16.png);
+    line-height: 2rem;
+
+}
+
+
+.liste-marques-pro{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.liste-marques-pro-img{
+    display: flex;
+    justify-content: center;
+}
+
+.liste-marques-pro-img img{
+    width: 25rem;
+}
+
+.liste-marques-pro-texte{
+    display: flex;
+    justify-content: center;
+}
+
+.reference-pro,
+.marques-pro,
+.partenaires-pro{
+    width: calc(90%/3);
+}
+
+.list-ul-pro{
+    display: flex;
+    justify-content: center;
+}
+
+.partenaires-pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liste-marques-pro-texte ul>li{
+    list-style-image: url(../icon/iconmonstr-cpu-jaune-16.png);
+    line-height: 2rem;
+
+}
+
+.conclusion-pro{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+.conclusion-pro-img{
+    display: flex;
+    justify-content: center;
+}
+
+.conclusion-pro-img img{
+    width: 28rem;
+}
+
+.assemblage-pro{
+    display: flex;
+    flex-direction: column;
+    
+}
+

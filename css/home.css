@@ -1,7 +1,12 @@
 html {
-    --text-color: #839e9c;
-    --bg-color-section-title: #2d4240;
+    --text-color-blue: #01588d;
+    --text-color-white: #fff;
+    --color-section-title: #00112a;
+    --color-title-purple : #8a01fe;
     --bg-color-section-about: #d2d9d8;
+    --bg-color-transition: linear-gradient(315deg, #00112a 0%, #01588d 74%);
+    --bg-color-title-h2-yellow: linear-gradient(to right, #ffbf3a 40%, #005287 100%);
+    --bg-color-blocks: linear-gradient(315deg, #00112a 0%, #01588d 74%);
     scroll-behavior: smooth;
 }
 
@@ -10,8 +15,6 @@ body {
     color: #b4b4b4;
 
 }
-
-
 
 /* ================================================================*/
 /* ======================    SECTIONS  ===========================*/
@@ -35,8 +38,9 @@ section h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #839e9c;
-    background-image: url(../images/carte-mere.jpg);
+    background-color: #b7d5e8;
+    background-image: url(../images/fond/circuit_blanc.jpg);
+
 
 }
 
@@ -58,7 +62,7 @@ section h1 {
     flex-direction: column;
     align-items: center;
     /* background-image: url(../images/carte-mere.jpg); */
-    background-image: linear-gradient(315deg, #d2d9d8 0%, #839e9c 74%);
+    background-image: var(--bg-color-transition);
     -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     margin: -100px 0px;
@@ -75,6 +79,8 @@ section h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #ffbf3a;
+    z-index: -2;
 
 }
 
@@ -88,14 +94,14 @@ section h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/carte-mere.jpg);
+    background-image: url(../images/fond/circuit_blanc.jpg);
     -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
     margin: -102px 0px;
 }
 
 .parallax-interv {
-    background-color: #d2d9d8;
+    background-color: #005287;
     position: relative;
     width: 100%;
     height: 140vh;
@@ -124,7 +130,7 @@ section h1 {
     /*padding: 5%;*/
     overflow: hidden;
     display: flex;
-    background-image: url(../images/carte-mere.jpg);
+    background-image: url(../images/fond/circuit_blanc.jpg);
     align-items: center;
     justify-content: space-around;
     -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
@@ -178,14 +184,14 @@ section h1 {
     font-weight: bold;
     font-size: calc(2rem + 2vw);
     background-clip: #ffbf3a;
-    background: linear-gradient(to left, #ffbf3a 30%, #839e9c 100%);
+    background: linear-gradient(to left, #ffbf3a 30%, #005287 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .about h2 {
     background-clip: #ffbf3a;
-    background: linear-gradient(to right, #ffbf3a 40%, #839e9c 100%);
+    background: linear-gradient(to right, #ffbf3a 40%, #005287 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -211,10 +217,14 @@ section h1 {
 .product_section {
     padding: 3%;
     margin-top: 4%;
+    color: #fff;
 }
 
 .product_section h2 {
-    color: #744b2c;
+    background-clip: #005287;
+    background: var(--bg-color-transition);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -232,7 +242,10 @@ section h1 {
 }
 
 .interv_title h2 {
-    color: #744b2c;
+    background-clip: #fdb92d;
+    background: #fdb92d;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 3%;
@@ -240,13 +253,13 @@ section h1 {
 }
 
 .parallax-interv h3 {
-    color: #744b2c;
-    background-image: linear-gradient(315deg, #fdb92d 30%, #744b2c 70%);
+    color: #00537c;
+    background-image: linear-gradient(315deg, #fdb92d 30%, #00537c 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-size: calc(0.8rem + 1vw);
-    text-shadow: 1px 1px #744b2c;
+    text-shadow: 1px 1px #00537c;
 }
 
 .interv-wrap {
@@ -267,8 +280,8 @@ h3,
 }
 
 .block {
-    height: 200px;
-    background-image: linear-gradient(315deg, #2d4240 35%, #d2d9d8 65%);
+    height: 208px;
+    background-image: linear-gradient(315deg, #ffbf3a 35%, #005287 65%);
     margin-bottom: 20px;
     display: flex;
     width: 90%;
@@ -281,9 +294,19 @@ h3,
 
 .block_text {
     width: 70%;
-    padding: 3%;
+    padding: 2%;
 }
 
+.link-1{
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.link-1:hover{
+    color: #1683ba;
+    font-weight: bold;
+}
 
 .reveal {
     position: relative;
@@ -327,107 +350,6 @@ h3,
     }
 }
 
-/* ================================================================*/
-/* ============================   LINKS ===========================*/
-/* ================================================================*/
-
-/* https://alvarotrigo.com/blog/css-animations-scroll/ */
-
-.block_links h2 {
-    color: #744b2c;
-    background-image: linear-gradient(315deg, #fdb92d 0%, #744b2c 74%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    font-size: calc(1rem + 1vw);
-    text-transform: uppercase;
-}
-
-.block_links  {
-    background-color: #2d4240;
-    /*padding: 3%;*/
-    width: calc(150rem + 150vw);
-    height: calc(30rem + 20vh);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% calc(100% - 100px));
-
-}
-
-.block_links-1,
-.block_links-2,
-.block_links-3{
-    display: flex;
-    align-items: center;
-}
-
-.block_links-1{
-    position: relative;
-    top:-2rem;
-
-}
-
-
-.block_links-2{
-    display: flex;
-    align-items: center;
-}
-
-
-.block_links-3{
-    position: relative;
-    top: 1rem;
-}
-
-
-.appear_links-list li{
-    padding: 0.5rem;
-}
-
-.link {
-    color: white;
-    font-size: 1.2rem;
-    letter-spacing: 1.5px;
-    --taille: 0.1em;   /* the thickness of the line */
-    --couleur: #744b2c; /* the color */
-
-    padding-block: var(--b);
-    background:
-            linear-gradient(var(--couleur) 50%,#ffbf3a 0) 0% calc(100% - var(--pourcentage,0%))/100% 200%,
-            linear-gradient(var(--couleur) 0 0) 0% var(--pourcentage,0%)/var(--pourcentage,0%) var(--taille) no-repeat;
-    -webkit-background-clip: text,padding-box;
-    background-clip: text,padding-box;
-    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
-}
-
-
-.link:hover {
-    color: #ffbf3a;
-    --pourcentage: 100%;
-    --_s: .3s;
-    font-weight: bold;
-}
-
-.link-1 {
-    color: #ffbf3a;
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-size: 11px;
-    line-height: 18px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.link-1:hover {
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-}
 
 /* ================================================================*/
 /* ============================  THANKS ===========================*/
@@ -444,7 +366,7 @@ a {
     flex-direction: column;
     align-items: center;
     /* background-image: url(../images/carte-mere.jpg); */
-    background-color:  #744b2c;
+    background-color:  #ffbf3a;
     padding: 3%;
 }
 
@@ -462,28 +384,13 @@ a {
 }
 
 .thanks h2 {
-    color: #ffbf3a;
+
     font-weight: bold;
     text-transform: uppercase;
     font-size: calc(2rem + 2vw);
+    background-clip: #005287;
+    background: var(--bg-color-transition);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* ================================================================*/
-/* ============================  FOOTER ===========================*/
-/* ================================================================*/
-
-footer {
-    background-color: #2d4240;
-    text-align: center;
-    height: 5vh;
-    padding: 0.5%;
-    color: #fdb92d;
-}
-
-.footer-mail {
-    color: #abbcbb;
-}
-
-footer a:hover {
-    color: #ffbf3a;
-}

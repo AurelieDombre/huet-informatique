@@ -14,7 +14,7 @@ html {
     --color-title-purple : #8a01fe;
     --bg-image: url(../images/fond/circuit_blanc.jpg);
     --bg-color-section-about: #d2d9d8;
-    --bg-color-light: #ffbf3a;
+    --bg-color-light: #f7b11b;
     --bg-color-transition: linear-gradient(315deg, #00112a 0%, #01588d 74%);
     --bg-color-title-h2-yellow: linear-gradient(to right, #ffbf3a 40%, #005287 100%);
     --bg-color-blocks: linear-gradient(315deg, #00112a 0%, #01588d 74%);
@@ -296,6 +296,12 @@ b{
 /* ============================  VENTES   ========================*/
 /* ================================================================*/
 
+.wrap_vente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .wrap_periph{
     background-color: rgba(246, 246, 245, 0.933);
     display: flex;
@@ -312,7 +318,9 @@ b{
 .wrap_ecran{
     font-size: 1.2rem;
     color: var(--text-color-white);
+    padding: 1rem;
 }
+
 
 
 /* ================================================================*/
@@ -643,4 +651,18 @@ b{
     flex-direction: column;
     
 }
+
+
+footer {
+    background-color: var(--color-bg--footer);
+    height: 10vh;
+    padding: 0.5%;
+    color: #fdb92d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96.1rem;
+    margin-left: 1.5rem;
+}
+
 

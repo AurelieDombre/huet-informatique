@@ -4,6 +4,7 @@ html {
     --color-section-title: #00112a;
     --color-title-purple : #8a01fe;
     --bg-color-section-about: #d2d9d8;
+    --bg-color-light: #f7b11b;
     --bg-color-transition: linear-gradient(315deg, #00112a 0%, #01588d 74%);
     --bg-color-title-h2-yellow: linear-gradient(to right, #ffbf3a 40%, #005287 100%);
     --bg-color-blocks: linear-gradient(315deg, #00112a 0%, #01588d 74%);
@@ -80,7 +81,7 @@ section h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffbf3a;
+    background-color: var(--bg-color-light);
     z-index: -2;
 
 }
@@ -367,7 +368,7 @@ h3,
     flex-direction: column;
     align-items: center;
     /* background-image: url(../images/carte-mere.jpg); */
-    background-color:  #ffbf3a;
+    background-color: var(--bg-color-light);
     padding: 3%;
 }
 

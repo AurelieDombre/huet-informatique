@@ -32,7 +32,7 @@ html {
     color: var(--text-color-white);
 }
 
-footer {
+/*footer {
     background-color: var(--color-bg--footer);
     height: 10vh;
     padding: 0.5%;
@@ -43,7 +43,7 @@ footer {
     width: 96.1rem;
     margin-left: 1.5rem;
 }
-
+*/
 .footer-mail {
     color: #abbcbb;
 }

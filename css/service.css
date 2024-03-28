@@ -297,3 +297,16 @@ body {
     font-weight: bold;
     color: #2d4240;
 }
+
+
+footer {
+    background-color: var(--color-bg--footer);
+    height: 10vh;
+    padding: 0.5%;
+    color: #fdb92d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96.1rem;
+    margin-left: 1.5rem;
+}

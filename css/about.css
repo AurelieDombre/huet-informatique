@@ -432,3 +432,28 @@ html {
 }
 
 
+/* ================================================================*/
+/* ============================  FOOTER ===========================*/
+/* ================================================================*/
+.link_document{
+    background-color: var(--color-bg--footer);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    width: 96.1rem;
+    margin-left: .7rem;
+}
+
+footer {
+    background-color: var(--color-bg--footer);
+    height: 10vh;
+    padding: 0.5%;
+    color: #fdb92d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96.1rem;
+    margin-left: .7rem;
+}

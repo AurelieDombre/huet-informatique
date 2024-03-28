@@ -395,3 +395,16 @@ h3,
     -webkit-text-fill-color: transparent;
 }
 
+
+footer {
+    background-color: var(--color-bg--footer);
+    height: 10vh;
+    padding: 0.5%;
+    color: #fdb92d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97.6rem;
+    /* margin-left: 0.5rem; */
+}
+

@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Valider les données (vous pouvez ajouter vos propres validations ici)
 
     // Envoyer les données par e-mail
-    $to = "aure.dombre.formation@gmail.com";
+    $to = "figeac.hi@gmail.com";
     $subject = "Nouveau message depuis le formulaire de contact";
     $message_body = "Nom: $firstname\nEmail: $email\nTéléphone: $phone\nMessage:\n$message";
     $headers = "From: $email";

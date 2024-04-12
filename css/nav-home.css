@@ -585,5 +585,28 @@ textarea, label {
 /* ======================    NAV-MOBILE  ===========================*/
 /* ================================================================*/
 
+@media screen and (max-width: 480px) {
+
+    .heading-page {
+        font-size: calc(1rem + 3vw);
+        letter-spacing: 6px;
+    }
+    .page-title p {
+        font-size: 0.8rem;
+    }
+
+}
 
 
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .heading-page {
+        font-size: calc(1rem + 3vw);
+        letter-spacing: 6px;
+    }
+    .page-title p {
+        font-size: 0.8rem;
+    }
+
+}

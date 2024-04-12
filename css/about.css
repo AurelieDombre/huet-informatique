@@ -157,6 +157,7 @@ html {
 .header_list_item{
     font-size: 2rem;
     line-height: 3rem;
+    text-align: center;
     padding: 2%;
 }
 

@@ -579,34 +579,58 @@ textarea, label {
 
 }
 
-
+.nav_responsive{
+    display: none;
+}
 
 /* ================================================================*/
 /* ======================    NAV-MOBILE  ===========================*/
 /* ================================================================*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
-    .heading-page {
-        font-size: calc(1rem + 3vw);
-        letter-spacing: 6px;
-    }
-    .page-title p {
-        font-size: 0.8rem;
+    .nav_responsive{
+        display: block;
     }
 
-}
-
-
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-    .heading-page {
-        font-size: calc(1rem + 3vw);
-        letter-spacing: 6px;
-    }
-    .page-title p {
-        font-size: 0.8rem;
+    .site-wrapper{
+        display: none;
     }
 
+    .logo_nav{
+        width: 12%;
+    }
+
+    .navbar-brand:focus{
+        color: #abbcbb;
+    }
+
+    .navbar-brand{
+        color: #abbcbb;
+        padding: 0.2rem;
+        width: 50%;
+    }
+    .navbar-brand:focus, .navbar-brand:hover {
+        color: #fdb92d;
+        
+    }
+    .nav-item:hover{
+        background-color: #005287;
+        border: #fdb92d 2px solid;
+    }
+    .nav-link{
+        color: #abbcbb;
+    }
+
+    .nav-link:hover {
+        color: #fdb92d;
+    }
+    .navbar-nav .nav-link.active, 
+    .navbar-nav .show>.nav-link {
+        color: #abbcbb;
+    }
+
+    .navbar-toggler{
+        background-color: #005287;
+    }
 }

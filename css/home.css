@@ -409,3 +409,50 @@ footer {
     /* margin-left: 0.5rem; */
 }
 
+@media screen and (max-width: 1200px) {
+
+    .parallax-title {
+        height: 20vh;
+    }
+
+    .parallax-about,
+    .parallax-product {
+        height: 35vh;
+        padding-top: 2rem;
+    }
+
+    .parallax-interv{
+        height: 120vh;
+    }
+
+    .interv_title{
+        padding: 1rem;
+    }
+    .interv_title h2{
+        padding: 0;
+        
+    }
+
+    .interv-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interv-block-left {
+        margin-left: 0%;
+    }
+
+    .parallax-thanks{
+        height: 25vh;
+    }
+
+    .thanks {
+        padding: 5%;
+        margin-top: 1.5rem;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}

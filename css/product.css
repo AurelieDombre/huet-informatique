@@ -22,7 +22,7 @@ html {
 
 
 .parallax-header {
-    width: 98%;
+    width: 100%;
     height: 50vh;
     background-attachment: fixed;
     background-position: center;
@@ -35,14 +35,13 @@ html {
     background-color: var(--color-section-title);
     position: absolute;
     top: 5rem;
-    left: 1rem;
     z-index: -2;
 
 }
 
 .parallax {
-    width: 98%;
-    height: 16vh;
+    width: 100%;
+    height: 20vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,8 +51,7 @@ html {
     align-items: center;
     background-image: url(../images/fond/circuit_blanc.jpg);
     position: absolute;
-    top: 27rem;
-    left: 1rem;
+    top: 55%;
 }
 
 .title_marques_h1{
@@ -78,12 +76,9 @@ html {
     flex-direction: column;
     align-items: center;
     background-image: var(--bg-color-transition);
-    margin-top: 30%;
-    
-    margin-top: 28rem;
+    margin-top: 35%;
     color: #d2d9d8;
     font-size: var(--texte-size);
-
 
 }
 
@@ -125,14 +120,10 @@ html {
     font-size: 1rem;
     font-weight: bold;
     padding: 0.8rem;
-    width: 96.1rem;
-    margin-left: 1.5rem;
+    width: 100%;
+    
 }
 
-.link_document a {
-    text-decoration: none;
-    color: var(--text-color-white);
-}
 
 
 footer {
@@ -143,8 +134,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96.1rem;
-    margin-left: 1.5rem;
+    
 }
 
 

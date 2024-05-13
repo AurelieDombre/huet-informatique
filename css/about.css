@@ -308,12 +308,12 @@ html {
 
 
 
-.about_citation {
+/*.about_citation {
     height: 100%;
     display: flex;
     justify-content: center;
     width: 100%;
-}
+}*/
 
 .parallax_citation {
     width: 100%;
@@ -337,9 +337,8 @@ html {
     color: white;
     position: relative;
     font-size: 20px;
-    text-align: center;
     line-height: normal;
-    width: 100%;
+
 }
 
 .text_citations li {
@@ -350,13 +349,20 @@ html {
 .item-2,
 .item-3 {
     position: absolute;
+    text-align: center;
     display: block;
     top: 4em;
     width: 40rem;
     font-size: 1.5em;
-    animation-duration: 20s;
+    animation-duration: 30s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+}
+
+.item-1,
+.item-2,
+.item-3 > div{
+    padding: 1rem;
 }
 
 .item-1 {
@@ -372,28 +378,26 @@ html {
 }
 
 @keyframes anim-1 {
-
     0%,
     8.3% {
-        left: -100%;
+        left: -50%;
         opacity: 0;
     }
 
-    8.3%,
-    25% {
-        left: 25%;
+    16.6%,
+    33.3% {
+        
         opacity: 1;
     }
 
-    33.33%,
+    41.6%,
     100% {
-        left: 110%;
+        left: 50%;
         opacity: 0;
     }
 }
 
 @keyframes anim-2 {
-
     0%,
     33.33% {
         left: -100%;
@@ -402,7 +406,7 @@ html {
 
     41.63%,
     58.29% {
-        left: 25%;
+        
         opacity: 1;
     }
 
@@ -414,7 +418,6 @@ html {
 }
 
 @keyframes anim-3 {
-
     0%,
     66.66% {
         left: -100%;
@@ -423,7 +426,7 @@ html {
 
     74.96%,
     91.62% {
-        left: 25%;
+        
         opacity: 1;
     }
 
@@ -432,6 +435,8 @@ html {
         opacity: 0;
     }
 }
+
+
 
 
 /* ================================================================*/

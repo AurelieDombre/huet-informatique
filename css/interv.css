@@ -27,7 +27,7 @@ html {
 /* ================================================================*/
 
 .parallax {
-    width: 98%;
+    width: 100%;
     height: 30vh;
     background-attachment: fixed;
     background-position: center;
@@ -38,12 +38,11 @@ html {
     align-items: center;
     background-image: var(--bg-image);
     position: absolute;
-    top: 27rem;
-    left: 1rem;
+    top: 55%;
 }
 
 .parallax-header {
-    width: 98%;
+    width: 100%;
     height: 50vh;
     background-attachment: fixed;
     background-position: center;
@@ -56,7 +55,6 @@ html {
     background-color: var(--color-section-title);
     position: absolute;
     top: 5rem;
-    left: 1rem;
     z-index: -2;
 
 }
@@ -72,9 +70,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30%;
+    margin-top: 40%;
     background-image: var(--bg-color-transition);
-    margin-top: 39rem;
     padding: 1%;
 
 }
@@ -83,6 +80,7 @@ html {
 .wrap {
     display: flex;
     flex-direction: column;
+    padding: .7rem;
 }
 
 .wrap_intro_interv_diag{
@@ -222,7 +220,7 @@ html {
     font-weight: bold;
     font-size: calc(2rem + 2vw);
     text-transform: uppercase;
-
+    padding: 1rem;
 }
 
 .title_interv_autre{
@@ -235,7 +233,7 @@ html {
     font-weight: bold;
     font-size: calc(2rem + 2vw);
     text-transform: uppercase;
-
+    padding: 1rem;
 }
 
 
@@ -300,6 +298,7 @@ b{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }
 
 .wrap_periph{
@@ -313,6 +312,7 @@ b{
 .wrap_ecran h2{
     font-size: 2rem;
     color: #ffbf3a;
+    
 }
 
 .wrap_ecran{
@@ -327,6 +327,10 @@ b{
 /* ============================  REPARATION   ========================*/
 /* ================================================================*/
 
+
+.wrap_reparation{
+    padding: 1rem
+}
 .reparation_periph{
     display: flex;
     align-items: center;
@@ -520,11 +524,13 @@ b{
     color: var(--text-color-white);
     font-size: var(--texte-size);
     line-height: var(--texte-line-heigt);
+    padding: 1rem;
 }
 
 .wrap-pro h3{
     color: #fdb92d;
     font-weight: bold;
+    margin-top: 1.5rem;
 }
 
 .wrap-pro h4{
@@ -652,6 +658,19 @@ b{
     
 }
 
+/* ================================================================*/
+/* ============================  FOOTER ===========================*/
+/* ================================================================*/
+.link_document{
+    background-color: var(--color-bg--footer);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    width: 100%;
+    
+}
 
 footer {
     background-color: var(--color-bg--footer);
@@ -661,8 +680,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96.1rem;
-    margin-left: 1.5rem;
 }
 
 

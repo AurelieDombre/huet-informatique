@@ -40,7 +40,7 @@ body {
 /* ================================================================*/
 
 .parallax-header {
-    width: 98%;
+    width: 100%;
     height: 50vh;
     background-attachment: fixed;
     background-position: center;
@@ -53,7 +53,7 @@ body {
     background-color: var(--color-section-title);
     position: absolute;
     top: 5rem;
-    left: 1rem;
+
     z-index: -2;
 
 }
@@ -82,7 +82,7 @@ body {
     background-image: var(--bg-image);
     position: relative;
     overflow: hidden;
-    top: 21rem;
+    top: 30rem;
 }
 
 .parallax-text {
@@ -97,7 +97,7 @@ body {
     background-color: var(--bg-color-light);
     position: relative;
     overflow: hidden;
-    top: 21rem;
+    top: 30rem;
 
 }
 
@@ -118,12 +118,12 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    top: 21rem;
+    top: 30rem;
 }
 
 .parallax-coord_map {
     width: 100%;
-    height: 68vh;
+    height: 90vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,9 +132,8 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: var(--bg-image);
-    position: relative;
     overflow: hidden;
-    top: 21rem;
+
 }
 
 
@@ -200,6 +199,19 @@ body {
 
 .semaine li {
     font-size: 1rem;
+    padding: 1rem;
+}
+
+.text_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 3rem;
+
+}
+
+.text_item img {
     padding: 1rem;
 }
 
@@ -309,6 +321,8 @@ form .pied-formulaire button:hover {
 
     background-color: #00112a85;
     margin-top: 1rem;
+    position: relative;
+    top: calc(100% / 2);
 }
 
 .wrap_map {
@@ -344,8 +358,8 @@ form .pied-formulaire button:hover {
     font-size: 1rem;
     font-weight: bold;
     padding: 1rem;
-    width: 96.1rem;
-    margin-left: 1.5rem;
+    width: 100%;
+
 }
 
 
@@ -357,6 +371,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96.1rem;
-    margin-left: 1.5rem;
+
 }

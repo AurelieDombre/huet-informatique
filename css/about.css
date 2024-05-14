@@ -21,7 +21,7 @@ html {
 
 
 .parallax-header {
-    width: 98%;
+    width: 100%;
     height: 60vh;
     background-attachment: fixed;
     background-position: center;
@@ -34,7 +34,6 @@ html {
     background-color: var(--color-section-title);
     position: absolute;
     top: 5rem;
-    left: 1rem;
     z-index: -2;
 
 }
@@ -54,7 +53,7 @@ html {
     flex-direction: column;
     align-items: center;
     background-color: var(--bg-color-light);
-    margin-top: 36%;
+    margin-top: calc(65rem/2);
 
 }
 
@@ -64,7 +63,7 @@ html {
 /********************************/
 
 .parallax_us {
-    width: 98%;
+    width: 100%;
     height: 20vh;
     background-attachment: fixed;
     background-position: center;
@@ -76,8 +75,8 @@ html {
     background-color: #839e9c;
     background-image: var(--bg-image);
     position: absolute;
-    top: 32rem;
-    left: 1rem;
+    top: 65%;
+    /* left: 0rem;*/
 }
 
 .parallax-particulier {
@@ -159,6 +158,7 @@ html {
     line-height: 3rem;
     text-align: center;
     padding: 2%;
+    color: white;
 }
 
 
@@ -308,12 +308,12 @@ html {
 
 
 
-.about_citation {
+/*.about_citation {
     height: 100%;
     display: flex;
     justify-content: center;
     width: 100%;
-}
+}*/
 
 .parallax_citation {
     width: 100%;
@@ -337,9 +337,8 @@ html {
     color: white;
     position: relative;
     font-size: 20px;
-    text-align: center;
     line-height: normal;
-    width: 100%;
+
 }
 
 .text_citations li {
@@ -350,13 +349,20 @@ html {
 .item-2,
 .item-3 {
     position: absolute;
+    text-align: center;
     display: block;
     top: 4em;
     width: 40rem;
     font-size: 1.5em;
-    animation-duration: 20s;
+    animation-duration: 30s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+}
+
+.item-1,
+.item-2,
+.item-3 > div{
+    padding: 1rem;
 }
 
 .item-1 {
@@ -372,28 +378,26 @@ html {
 }
 
 @keyframes anim-1 {
-
     0%,
     8.3% {
-        left: -100%;
+        left: -50%;
         opacity: 0;
     }
 
-    8.3%,
-    25% {
-        left: 25%;
+    16.6%,
+    33.3% {
+        
         opacity: 1;
     }
 
-    33.33%,
+    41.6%,
     100% {
-        left: 110%;
+        left: 50%;
         opacity: 0;
     }
 }
 
 @keyframes anim-2 {
-
     0%,
     33.33% {
         left: -100%;
@@ -402,7 +406,7 @@ html {
 
     41.63%,
     58.29% {
-        left: 25%;
+        
         opacity: 1;
     }
 
@@ -414,7 +418,6 @@ html {
 }
 
 @keyframes anim-3 {
-
     0%,
     66.66% {
         left: -100%;
@@ -423,7 +426,7 @@ html {
 
     74.96%,
     91.62% {
-        left: 25%;
+        
         opacity: 1;
     }
 
@@ -432,6 +435,8 @@ html {
         opacity: 0;
     }
 }
+
+
 
 
 /* ================================================================*/
@@ -444,8 +449,8 @@ html {
     font-size: 1rem;
     font-weight: bold;
     padding: 0.8rem;
-    width: 96.1rem;
-    margin-left: .7rem;
+    width: 100%;
+    
 }
 
 footer {
@@ -456,6 +461,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96.1rem;
-    margin-left: .7rem;
+    
 }

@@ -373,3 +373,33 @@ footer {
     align-items: center;
 
 }
+
+
+@media screen and (max-width: 768px) {
+    .parallax-coord {
+        flex-direction: column;
+    }
+
+    .coord,
+    .block_contact {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: none;
+        margin-bottom: 2%;
+    }
+    ul {
+        list-style: none;
+        margin-top: 1.5rem;
+        padding-left: 0;
+    }
+    .icon_calendar {
+        padding: 2rem;
+    }
+
+    .corps-formulaire .gauche{
+        margin-right: 1rem;
+    }
+
+}

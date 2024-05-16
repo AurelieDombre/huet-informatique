@@ -82,7 +82,7 @@ body {
     background-image: var(--bg-image);
     position: relative;
     overflow: hidden;
-    top: calc(30rem/2);
+    top: 20rem;
 }
 
 .parallax-text {
@@ -97,7 +97,7 @@ body {
     background-color: var(--bg-color-light);
     position: relative;
     overflow: hidden;
-    top: calc(30rem / 2);
+    top: 20rem;
 
 }
 
@@ -118,12 +118,12 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    top: calc(30rem / 2);
+    top: 20rem;
 }
 
 .parallax-coord_map {
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -322,7 +322,7 @@ form .pied-formulaire button:hover {
     background-color: #00112a85;
     margin-top: 1rem;
     position: relative;
-    top: calc(65% / 2);
+    top: calc(80% / 2);
 }
 
 .wrap_map {
@@ -371,5 +371,35 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .parallax-coord {
+        flex-direction: column;
+    }
+
+    .coord,
+    .block_contact {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: none;
+        margin-bottom: 2%;
+    }
+    ul {
+        list-style: none;
+        margin-top: 1.5rem;
+        padding-left: 0;
+    }
+    .icon_calendar {
+        padding: 2rem;
+    }
+
+    .corps-formulaire .gauche{
+        margin-right: 1rem;
+    }
 
 }

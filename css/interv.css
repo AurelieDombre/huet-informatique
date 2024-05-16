@@ -70,7 +70,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:calc(65rem/2);
+    margin-top: 35%;
     background-image: var(--bg-color-transition);
     padding: 1%;
 

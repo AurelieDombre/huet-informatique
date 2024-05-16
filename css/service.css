@@ -79,7 +79,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--bg-color-light);
-    margin-top: calc(128rem / 2);
+    margin-top: calc(70rem / 2);
 
 }
 

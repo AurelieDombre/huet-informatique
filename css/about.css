@@ -53,7 +53,7 @@ html {
     flex-direction: column;
     align-items: center;
     background-color: var(--bg-color-light);
-    margin-top: 30%;
+    margin-top: 100%;
 
 }
 
@@ -109,6 +109,7 @@ html {
     background-image: var(--bg-image);
     position: relative;
     overflow: hidden;
+    justify-content: center;
 }
 
 
@@ -462,4 +463,120 @@ footer {
     justify-content: center;
     align-items: center;
     
+}
+
+
+
+@media  screen and (max-width: 768px){
+    
+    .title_header_h1{
+        font-size: calc(1rem + 1vw);
+    }
+    .header_list_item{
+        font-size: 1rem;
+        margin-top: 1rem;
+        line-height: 2rem;
+    }
+
+    .parallax_us{
+        top: 72%;
+        position: absolute;
+        height: 25vh;
+    }
+    .title_header_h2 {
+        font-size: calc(1rem + 1vw);
+    }
+
+     /* PRO */
+
+    .parallax-pro{
+        height: 125vh;
+        margin-top: 35rem;
+    }
+    .wrap_pro--img--text {
+        display: flex;
+        align-items: center;
+        padding: 2%;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .wrap_pro--img img{
+        width: 50%;
+    }
+
+    .wrap_pro-p,
+    .particulier-intro-text{
+        padding: 1%;
+        font-size: 1rem;
+    }
+
+    /* PRARTICULIER */
+    .wrap_particulier {
+        display: flex;
+        margin-top: 9%;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: #d2d9d8;
+    }
+
+    .blocs-texts h3 {
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        text-align: center;
+        width: 60%;
+    }
+
+    .particulier-intro {
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 60%;
+    }
+    .bloc-text--intro {
+        padding: 2%;
+        text-align: center;
+        width: 70%;
+    }
+
+    .bloc-text {
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    
+
+    .wrap--bloc--text--image {
+        display: flex;
+        align-items: center;
+        padding: 2%;
+        flex-direction: column;
+    }
+
+    .wrap--bloc--text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .text_citations li {
+        overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .link_document {
+        font-size: 0.7rem;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
 }

@@ -402,4 +402,29 @@ footer {
         margin-right: 1rem;
     }
 
+    .map {
+        width: 90%;
+    }
+    .wrap_map img{
+        width: 70%;
+    }
+
+    .wrap_map h3 {
+        font-size: calc(1rem + 0.4vw);
+    }
+
+    iframe {
+        width: 80%;
+    }
+
+    /*footer*/
+
+    .link_document{
+        font-size: 0.7rem;
+    }
+
+    footer{
+        font-size: smaller;
+    }
+
 }

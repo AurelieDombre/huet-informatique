@@ -505,6 +505,17 @@ footer {
         padding: 1%;
     }
 
+
+    /*footer*/
+
+    .link_document{
+        font-size: 0.7rem;
+    }
+
+    footer{
+        font-size: smaller;
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {

@@ -155,7 +155,7 @@ nav {
 }
 
 /* Responsiveness */
-@media (min-width: 968px) {
+@media (min-width: 1028px) {
 
      /*** Nav ***/
     .item-wrap span{
@@ -191,7 +191,7 @@ nav {
     }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1028px) {
      /*** Nav ***/
     .item-wrap span{
         display: none;

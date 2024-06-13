@@ -524,6 +524,11 @@ footer {
         height: 20vh;
         background-attachment: inherit;
     }
+    .reveal{
+        opacity: 1;
+        
+    }
+
 
     .parallax-about,
     .parallax-product {

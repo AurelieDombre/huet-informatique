@@ -76,7 +76,7 @@ html {
     flex-direction: column;
     align-items: center;
     background-image: var(--bg-color-transition);
-    margin-top: 30%;
+    margin-top: 60%;
     color: #d2d9d8;
     font-size: var(--texte-size);
 
@@ -109,6 +109,36 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
+.table-responsive {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.table-row {
+    display: contents;
+}
+
+.table-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table-cell img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .table-responsive {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
 
 /* ================================================================*/
 /* ============================  FOOTER ===========================*/
@@ -137,4 +167,37 @@ footer {
     
 }
 
+@media screen and (max-width: 768px){
 
+    .parallax{
+        display: none;
+    }
+
+    .parallax-marques {
+        padding: 5%;
+    }
+
+    footer {
+        height: 15vh;
+        padding: 5%;
+    }
+
+    .signature {
+        margin-top: 5%;
+        padding-top: 5%;
+    }
+
+    .link_document{
+        padding: 5%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1234px){
+
+    .parallax{
+        display: none;
+    }
+
+
+}

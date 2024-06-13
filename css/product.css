@@ -180,6 +180,7 @@ footer {
     footer {
         height: 15vh;
         padding: 5%;
+        text-align: center;
     }
 
     .signature {
@@ -189,6 +190,8 @@ footer {
 
     .link_document{
         padding: 5%;
+        font-size: 0.8rem;
+        text-align: center;
     }
 }
 

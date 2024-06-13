@@ -10,6 +10,7 @@ header {
     padding: 0 10px;
     position: relative;
     z-index: 10;
+    flex-direction: row-reverse;
 }
 
 nav a {
@@ -155,6 +156,13 @@ nav {
 
 /* Responsiveness */
 @media (min-width: 968px) {
+
+     /*** Nav ***/
+    .item-wrap span{
+        display: none;
+    }
+
+
     nav {
         max-height: none;
         top: 0;
@@ -184,6 +192,12 @@ nav {
 }
 
 @media (max-width: 968px) {
+     /*** Nav ***/
+    .item-wrap span{
+        display: none;
+    }
+
+
     ul {
         margin-top: 5.5rem;
     }

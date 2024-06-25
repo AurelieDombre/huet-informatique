@@ -515,6 +515,10 @@ b{
 }
 
 
+.reparation-appareils-texte_dropdown{
+    display: none;
+}
+
 /* ================================================================*/
 /* ============================ PROFESSIONNEL   ====================*/
 /* ================================================================*/
@@ -680,6 +684,140 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media  screen and (max-width: 768px) {
+    
+
+    .parallax-header {
+        height: 50vh;
+    }
+    .parallax {
+        top: 55%;
+    }
+
+        /* Diagnostique */
+    .parallax-diagnosctic {
+        margin-top: 39rem;
+    }
+
+    .wrap_intro_interv_diag {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wrap_text {
+        font-size: medium;
+        margin: 2.2rem;
+    }
+
+    .end_line{
+        text-align: center;
+    }
+
+    /* Assemblage */
+
+    .wrap_assemblage {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wrap_image img{
+        width: 90%;
+    }
+
+    .wrap_text_assemblage{
+        margin: 2rem;
+    }
+
+    /* Ventes */
+
+    .wrap_ecran h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .wrap_p {
+        margin-right: 10rem;
+        text-align: center;
+        margin-left: 10rem;
+    }
+
+
+    .wrap_periph_images{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Reparation */
+    .reparation-entete {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 3%;
+    }
+
+    .reparation_periph-titre h2{
+        font-size: 1.2rem;
+        margin: 0 20% 0 20%;
+
+    }
+
+    .reparation-corp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3%;
+        flex-direction: column;
+    }
+
+    .parallax-reparation h3 {
+        font-size: 1rem;
+    }
+
+
+
+    .reparation_periph-smartphone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        flex-direction: column;
+        margin: 3%;
+        text-align: center;
+    }
+
+    .reparation_periph_ecran-items {
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        align-items: center;
+    }
+
+    .icon-text {
+        width: 50%;
+    }
+
+
+    .reparation-appareils-texte_dropdown{
+        display: block;
+    }
+
+    .reparation-appareils_h4,
+    .reparation-appareils_ul{
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px)
+{
+
 }
 
 

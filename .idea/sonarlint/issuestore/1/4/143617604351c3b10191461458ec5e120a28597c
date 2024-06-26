@@ -1,0 +1,19 @@
+
+IWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(¾ïÖ¢
+r%Web:ItemTagNotWithinContainerTagCheck*"<Surround this <li> item tag by a <ul> or <ol> container one.(ãšè’øÿÿÿÿ
+LWeb:ImgWithoutAltCheck4"%Add an "alt" attribute to this image.(¡§µ‚üÿÿÿÿ
+GWeb:ImgWithoutAltCheck<"%Add an "alt" attribute to this image.(¸‘Ÿš
+LWeb:ImgWithoutAltCheckD"%Add an "alt" attribute to this image.(Ÿ¿š¢ûÿÿÿÿ
+LWeb:ImgWithoutAltCheckM"%Add an "alt" attribute to this image.(Ù¶…üÿÿÿÿ
+LWeb:ImgWithoutAltCheckY"%Add an "alt" attribute to this image.(«ª›Åüÿÿÿÿ
+LWeb:ImgWithoutAltCheckb"%Add an "alt" attribute to this image.(ðÛ‚êúÿÿÿÿ
+LWeb:ImgWithoutAltCheckk"%Add an "alt" attribute to this image.(‰¯ßùÿÿÿÿ
+MWeb:ImgWithoutAltCheck½"%Add an "alt" attribute to this image.(×Œž®ÿÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheckÍ"Remove this commented out code.(¡“¿¾ùÿÿÿÿ
+E	Web:S6853Ó"/A form label must be associated with a control.(ÍÁ­Ù
+E	Web:S6853Ø"/A form label must be associated with a control.(¥Ã‚Ö
+J	Web:S6853Ý"/A form label must be associated with a control.(Åçù¦ûÿÿÿÿ
+E	Web:S6853ä"/A form label must be associated with a control.(ÉÎ¦’
+D	Web:S1827ë")Remove this deprecated "align" attribute.(÷Šõ—üÿÿÿÿ
+YWeb:FrameWithoutTitleCheckö"-Add a "title" attribute to this <iframe> tag.(ÁƒšÂþÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheckš"Remove this commented out code.(ãÎÈ‘ùÿÿÿÿ

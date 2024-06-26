@@ -1,0 +1,12 @@
+
+IWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(¾ïÖ¢
+D	Web:S6853'"/A form label must be associated with a control.(ÊÊÜÓ
+m%Web:ItemTagNotWithinContainerTagCheck("<Surround this <li> item tag by a <ul> or <ol> container one.(»æÚÉ
+LWeb:ImgWithoutAltCheck0"%Add an "alt" attribute to this image.(¡§µ‚üÿÿÿÿ
+GWeb:ImgWithoutAltCheck8"%Add an "alt" attribute to this image.(¸‘Ÿš
+LWeb:ImgWithoutAltCheck@"%Add an "alt" attribute to this image.(Ÿ¿š¢ûÿÿÿÿ
+LWeb:ImgWithoutAltCheckI"%Add an "alt" attribute to this image.(Ù¶…üÿÿÿÿ
+LWeb:ImgWithoutAltCheckR"%Add an "alt" attribute to this image.(«ª›Åüÿÿÿÿ
+LWeb:ImgWithoutAltCheck["%Add an "alt" attribute to this image.(ğÛ‚êúÿÿÿÿ
+LWeb:ImgWithoutAltCheckd"%Add an "alt" attribute to this image.(‰¯ßùÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheckœ"Remove this commented out code.(ãÎÈ‘ùÿÿÿÿ

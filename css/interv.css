@@ -515,7 +515,13 @@ b{
 }
 
 
-.reparation-appareils-texte_dropdown{
+.reparation_appareils_tablettes_dropdown,
+.reparation_appareils_consoles_dropdown,
+.reparation_appareils_telephone_dropdown,
+.reparation_appareils_Apphotos_dropdown,
+.reparation_appareils_GPS_dropdown,
+.reparation_appareils_ipod_dropdown,
+.reparation_appareils_montre_dropdown{
     display: none;
 }
 
@@ -802,12 +808,18 @@ footer {
     }
 
 
-    .reparation-appareils-texte_dropdown{
+    .reparation_appareils_tablettes_dropdown,
+    .reparation_appareils_consoles_dropdown,
+    .reparation_appareils_telephone_dropdown,
+    .reparation_appareils_Apphotos_dropdown,
+    .reparation_appareils_GPS_dropdown,
+    .reparation_appareils_ipod_dropdown,
+    .reparation_appareils_montre_dropdown{
         display: block;
     }
 
-    .reparation-appareils_h4,
-    .reparation-appareils_ul{
+    .reparation-appareils-texte
+    {
         display: none;
     }
 
